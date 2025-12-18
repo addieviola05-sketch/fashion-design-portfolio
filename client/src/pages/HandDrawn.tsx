@@ -51,7 +51,13 @@ export default function HandDrawn() {
       tagline: "Solarpunk Architecture & Harmony",
       description: "A solarpunk-inspired collection that merges tailored silhouettes with fluid draping, knitwear, and technical construction. Drawing from architectural references like the Amazon Spheres, this collection explores the harmony between body, environment, and technology. Clean lines meet organic curves; structured tailoring flows into ethereal draping, creating a dialogue between human form and natural systems.",
       inspiration: ["Solarpunk", "Amazon Spheres", "Architectural Form", "Technical Knitwear", "Environmental Harmony"],
-      carouselImages: [],
+      carouselImages: [
+        "/collections/solar-synthesis/page-01.png",
+        "/collections/solar-synthesis/page-02.png",
+        "/collections/solar-synthesis/page-03.png",
+        "/collections/solar-synthesis/page-04.png",
+        "/collections/solar-synthesis/page-05.png",
+      ],
     },
     {
       id: "the-poppy-war",
