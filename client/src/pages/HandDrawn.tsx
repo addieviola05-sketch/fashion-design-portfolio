@@ -170,10 +170,22 @@ export default function HandDrawn() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-24 flex items-center justify-center bg-secondary/50 border-b border-border">
-        <div className="container text-center">
-          <h1 className="text-5xl md:text-6xl font-cormorant font-bold mb-4">Hand Drawn Collections</h1>
-          <p className="text-lg text-foreground/70">
+      <section className="relative h-96 md:h-[500px] flex items-center justify-center border-b border-border overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url(/images/hand-drawn-hero.jpg)",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="absolute inset-0 bg-black/45" />
+        </div>
+
+        {/* Content */}
+        <div className="container text-center relative z-10 px-4">
+          <h1 className="text-5xl md:text-7xl font-cormorant font-bold mb-4 text-amber-50 drop-shadow-lg">Hand Drawn Collections</h1>
+          <p className="text-lg md:text-xl text-amber-50/90 drop-shadow-md">
             Conceptual narratives through design
           </p>
           <div className="w-12 h-1 bg-accent mx-auto mt-6" />

@@ -1,8 +1,8 @@
 # Fashion Portfolio TODO
 
 ## Collections - Image Extraction & Pages
-- [x] Sorrow of Angels - carousel + grid gallery complete
-- [x] Metamorphosis - carousel + grid gallery complete
+- [ ] Sorrow of Angels - extract all 53 slides (currently only 5), update carousel + grid gallery
+- [x] Metamorphosis - all 22 slides extracted and displayed
 - [x] Fall of the Romanovs - carousel + grid gallery complete (fixed carousel image paths, fixed nested anchor tags)
 - [x] Solar Synthesis - all 28 slides extracted and displayed in carousel + grid gallery
 - [x] The Poppy War - all 18 slides extracted, carousel + grid gallery complete
@@ -33,6 +33,8 @@
 - [x] Replaced emoji icons with elegant line art icons for portfolio sections
 - [x] Fixed nested anchor tag errors in navigation
 - [x] Fixed HandDrawn page carousel preview layouts
+- [x] Added professional About Me photo to home page
+- [x] Added horizontal hero background image to Hand Drawn Collections page
 
 ## Final Quality Assurance
 - [ ] Test all navigation links

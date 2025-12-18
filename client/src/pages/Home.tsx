@@ -180,8 +180,8 @@ export default function Home() {
             {/* Image */}
             <div className="relative overflow-hidden rounded-lg h-96 md:h-full min-h-96">
               <img
-                src="/images/design-process.jpg"
-                alt="Design Process"
+                src="/images/about-me.jpg"
+                alt="Addison Moore - Fashion Designer"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
