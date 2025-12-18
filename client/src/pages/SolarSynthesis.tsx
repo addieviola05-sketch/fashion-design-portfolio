@@ -23,12 +23,6 @@ export default function SolarSynthesis() {
     "/collections/solar-synthesis/page-07.png",
     "/collections/solar-synthesis/page-08.png",
     "/collections/solar-synthesis/page-09.png",
-    "/collections/solar-synthesis/page-10.png",
-    "/collections/solar-synthesis/page-11.png",
-    "/collections/solar-synthesis/page-12.png",
-    "/collections/solar-synthesis/page-13.png",
-    "/collections/solar-synthesis/page-14.png",
-    "/collections/solar-synthesis/page-15.png",
   ];
 
   // Auto-play carousel
