@@ -126,7 +126,7 @@ export default function Home() {
               };
               return (
               <Link key={section.id} href={routeMap[section.id] || '/'}>
-                <a
+                <div
                   className="group cursor-pointer block"
                   style={{
                     animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`,
@@ -153,7 +153,7 @@ export default function Home() {
                       Explore <span>→</span>
                     </div>
                   </div>
-                </a>
+                </div>
               </Link>
             );
             })}

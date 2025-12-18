@@ -8,36 +8,44 @@ import { Link } from "wouter";
 
 export default function About() {
   const skills = [
-    "Costume Design",
-    "Fashion Design",
-    "Technical Drawing",
-    "Pattern Making",
-    "Garment Construction",
-    "Fabric Sourcing",
-    "Digital Design",
-    "3D Modeling",
-    "Historical Research",
-    "Character Development",
+    "Industrial & Domestic Machine Operation",
+    "Patternmaking & Draping",
+    "Fitting & Alterations",
+    "Hand Sewing & Embroidery",
+    "Garment Construction & Restoration",
+    "Fabric Sourcing & Textile Knowledge",
+    "Budgeting & Production Collaboration",
+    "Moodboarding",
+    "Presentation Development",
+    "Visual Storytelling",
+    "Rendering & Illustration",
+    "Research-Driven Design Process",
   ];
 
   const experience = [
     {
-      title: "Lead Costume Designer",
-      organization: "Theater Company",
-      period: "2022 - Present",
-      description: "Designed costumes for 8+ theatrical productions, managing budgets and teams.",
+      title: "Costume Dresser / Production Assistant",
+      organization: "Hale Center World-Class Theatre",
+      period: "Dec 2025 - Present",
+      description: "Repair, fit, and alter garments for performances. Assist actors in dressing and undressing during quick changes. Organize costumes and accessories backstage for efficient access during productions.",
     },
     {
-      title: "Fashion Designer",
-      organization: "Independent Practice",
-      period: "2020 - Present",
-      description: "Created multiple fashion collections and collaborated with brands.",
+      title: "Vintage Reseller & Poshmark Ambassador",
+      organization: "@addieviola",
+      period: "Mar 2023 - Present",
+      description: "Curate, restore, and market vintage clothing with over 250 listings and $1K in sales. Execute detailed garment restoration through hand-sewing, beading, and embroidery. Manage sourcing, pricing, and customer satisfaction.",
     },
     {
-      title: "Costume Assistant",
-      organization: "Film & Television",
-      period: "2018 - 2021",
-      description: "Assisted in costume design for film and television productions.",
+      title: "Fashion Designer Assistant",
+      organization: "Hudson Valley Fashion Week",
+      period: "Sep 2024 - Sep 2025",
+      description: "Prep garments and accessories backstage; assist in model dressing under live-show deadlines. Coordinate look completion and final garment readiness for runway presentation.",
+    },
+    {
+      title: "Costume Designer",
+      organization: "Marist Children's Theatre",
+      period: "Aug 2024 - Dec 2024",
+      description: "Design and style costumes for 50-member ensemble. Create original sketches, look boards, and color pathways. Lead costume team through fittings and manage production budget.",
     },
   ];
 
@@ -55,8 +63,9 @@ export default function About() {
             <Link href="/">
               <a className="hover:text-accent transition-colors">Home</a>
             </Link>
-            <a href="#skills" className="hover:text-accent transition-colors">Skills</a>
-            <a href="#experience" className="hover:text-accent transition-colors">Experience</a>
+            <Link href="/about">
+              <a className="hover:text-accent transition-colors">About</a>
+            </Link>
           </div>
         </nav>
       </header>
@@ -65,75 +74,68 @@ export default function About() {
       <section className="relative h-96 flex items-center justify-center bg-secondary/50 border-b border-border">
         <div className="container text-center">
           <h1 className="text-5xl md:text-6xl font-cormorant font-bold mb-4">About Me</h1>
-          <div className="w-12 h-1 bg-accent mx-auto" />
+          <p className="text-lg text-foreground/70">
+            Costume Designer & Fashion Design Student
+          </p>
+          <div className="w-12 h-1 bg-accent mx-auto mt-6" />
         </div>
       </section>
 
-      {/* Main Content */}
+      {/* Content Section */}
       <section className="py-24">
         <div className="container max-w-4xl">
-          {/* Bio Section */}
-          <div className="mb-16">
-            <h2 className="text-4xl font-cormorant font-bold mb-6">Professional Journey</h2>
-            <div className="w-12 h-1 bg-accent mb-8" />
-
+          {/* Introduction */}
+          <div className="mb-20">
             <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
               <p>
-                I am a dedicated costume and fashion designer with a passion for storytelling
-                through garment design. My practice bridges the worlds of theatrical costume
-                design and contemporary fashion, allowing me to explore the full spectrum of
-                wearable art.
+                I am a costume and fashion designer originally from Oregon, currently pursuing a BFA in Fashion Design with minors in Cinema Studies and Product Development at Marist University. My work is shaped by early experience in ballet and theatre costuming in the Pacific Northwest, where I developed a strong foundation in garment alteration, restoration, and performance-based design.
               </p>
 
               <p>
-                My design process begins with deep research and conceptualization. Whether
-                designing historically accurate costumes for period dramas or creating
-                contemporary fashion collections, I approach each project with meticulous
-                attention to detail, understanding of character and narrative, and commitment to
-                technical excellence.
+                My design practice centers on character-driven wardrobe built through research, construction, and narrative logic. I am especially interested in how costume communicates power, psychology, and transformation over time, drawing from historical references, mythic structures, and cinematic language. I gravitate toward designs that feel restrained, intentional, and lived-in—where clothing functions as part of the world rather than as spectacle.
               </p>
 
               <p>
-                I specialize in multiple design disciplines: hand-drawn sketches and technical
-                flats, digital design and 3D visualization, pattern making and garment
-                construction, and fabric research and sourcing. This multifaceted approach allows
-                me to realize designs from concept through final execution.
+                Across theatre productions, fashion week environments, and independent vintage restoration work, I have gained hands-on experience in fittings, quick changes, pattern drafting, and garment repair under live production constraints. I bring a detail-oriented, collaborative approach to design, with a particular strength in translating concept into wearable, functional pieces that support performers and story alike.
               </p>
 
-              <p>
-                Beyond the technical aspects, I believe in sustainable design practices,
-                thoughtful material selection, and creating garments that empower the wearer or
-                character. Every stitch, seam, and embellishment serves a purpose in the larger
-                narrative.
+              <p className="text-base text-accent font-semibold mt-8 pt-6 border-t border-border">
+                ✦ (541) 280-9231 | ✦ addison.ogcoaicloud.com
               </p>
             </div>
           </div>
 
           {/* Design Philosophy */}
-          <div className="mb-16 p-8 bg-secondary/30 rounded-lg border border-border">
-            <h3 className="text-2xl font-cormorant font-bold mb-4">Design Philosophy</h3>
-            <p className="text-foreground/80 leading-relaxed">
-              "Design is the art of storytelling through fabric. Every garment tells a story—of
-              character, of history, of intention. My role is to listen to that story and
-              translate it into form, color, texture, and movement. Whether working in theater,
-              film, or fashion, I believe that great design is invisible in its rightness; it
-              simply feels true."
-            </p>
+          <div className="mb-20 bg-secondary/30 p-8 rounded-lg border border-border">
+            <h2 className="text-3xl font-cormorant font-bold mb-6">Design Philosophy</h2>
+            <div className="w-12 h-1 bg-accent mb-6" />
+
+            <div className="space-y-4 text-lg text-foreground/80 leading-relaxed">
+              <p>
+                <strong>Character-Driven:</strong> Every garment tells a story. I design costumes that reveal character psychology, status, and transformation through fabric, silhouette, and detail.
+              </p>
+              <p>
+                <strong>Research-Based:</strong> My process is grounded in historical research, mythic structures, and cinematic language. I believe informed design choices create authenticity and depth.
+              </p>
+              <p>
+                <strong>Restrained & Intentional:</strong> I favor designs that feel lived-in and functional—where clothing serves the story rather than distracting from it.
+              </p>
+              <p>
+                <strong>Collaborative:</strong> Costume design is inherently collaborative. I work closely with directors, performers, and production teams to realize a unified vision.
+              </p>
+            </div>
           </div>
 
-          {/* Skills Section */}
-          <div id="skills" className="mb-16">
+          {/* Core Competencies */}
+          <div className="mb-20">
             <h2 className="text-4xl font-cormorant font-bold mb-6">Core Competencies</h2>
             <div className="w-12 h-1 bg-accent mb-8" />
 
             <div className="grid md:grid-cols-2 gap-4">
-              {skills.map((skill, index) => (
+              {skills.map((skill) => (
                 <div
                   key={skill}
-                  className="p-4 bg-secondary/50 rounded-lg border border-border hover:border-accent transition-colors"
-                  style={{
-                    animation: `fadeInUp 0.5s ease-out ${index * 0.05}s both`,
-                  }}
+                  className="p-4 bg-secondary/30 rounded-lg border border-border hover:border-accent transition-colors"
                 >
                   <p className="font-raleway font-semibold text-foreground">{skill}</p>
                 </div>
@@ -141,21 +143,15 @@ export default function About() {
             </div>
           </div>
 
-          {/* Experience Section */}
-          <div id="experience" className="mb-16">
+          {/* Experience */}
+          <div className="mb-20">
             <h2 className="text-4xl font-cormorant font-bold mb-6">Experience</h2>
             <div className="w-12 h-1 bg-accent mb-8" />
 
             <div className="space-y-8">
-              {experience.map((exp, index) => (
-                <div
-                  key={exp.title}
-                  className="pb-8 border-b border-border last:border-b-0"
-                  style={{
-                    animation: `fadeInUp 0.5s ease-out ${index * 0.1}s both`,
-                  }}
-                >
-                  <div className="flex justify-between items-start mb-2">
+              {experience.map((exp) => (
+                <div key={exp.title} className="border-l-2 border-accent pl-6 py-2">
+                  <div className="mb-2">
                     <h3 className="text-2xl font-cormorant font-bold">{exp.title}</h3>
                     <span className="text-accent font-raleway text-sm font-semibold">
                       {exp.period}
@@ -170,6 +166,14 @@ export default function About() {
             </div>
           </div>
 
+          {/* Vision */}
+          <div className="mb-16 bg-accent/10 p-8 rounded-lg border border-accent/30">
+            <h2 className="text-3xl font-cormorant font-bold mb-4">Vision</h2>
+            <p className="text-lg text-foreground/80 leading-relaxed">
+              My goal is to continue working in film and television costume design, contributing to productions where wardrobe is integral to character, atmosphere, and storytelling. I seek opportunities to create costumes that elevate narrative and support performers in bringing complex characters to life.
+            </p>
+          </div>
+
           {/* CTA Section */}
           <div className="text-center pt-8 border-t border-border">
             <h3 className="text-2xl font-cormorant font-bold mb-4">Ready to Collaborate?</h3>
@@ -177,7 +181,7 @@ export default function About() {
               Let's discuss your next project or creative vision.
             </p>
             <a
-              href="mailto:contact@example.com"
+              href="mailto:addison.ogcoaicloud.com"
               className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-accent-foreground rounded-lg font-raleway font-semibold hover:opacity-90 transition-opacity"
             >
               Get in Touch
@@ -196,7 +200,7 @@ export default function About() {
         @keyframes fadeInUp {
           from {
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateY(30px);
           }
           to {
             opacity: 1;
