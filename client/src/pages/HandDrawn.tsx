@@ -125,35 +125,38 @@ export default function HandDrawn() {
       <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <nav className="container py-4 flex justify-between items-center">
           <Link href="/">
-            <a className="hover:opacity-80 transition-opacity">
+            <div className="hover:opacity-80 transition-opacity cursor-pointer">
               <img src="/images/logo-monogram.png" alt="Addison Moore" className="h-12 w-auto" />
-            </a>
+            </div>
           </Link>
           <div className="flex gap-6 text-sm">
             <Link href="/">
-              <a className="hover:text-accent transition-colors">Home</a>
+              <div className="hover:text-accent transition-colors cursor-pointer">Home</div>
             </Link>
             <Link href="/about">
-              <a className="hover:text-accent transition-colors">About</a>
+              <div className="hover:text-accent transition-colors cursor-pointer">About</div>
             </Link>
             <Link href="/hand-drawn">
-              <a className="hover:text-accent transition-colors">Hand Drawn</a>
+              <div className="hover:text-accent transition-colors cursor-pointer">Hand Drawn</div>
             </Link>
             <Link href="/sewing">
-              <a className="hover:text-accent transition-colors">Sewing</a>
+              <div className="hover:text-accent transition-colors cursor-pointer">Sewing</div>
             </Link>
             <Link href="/digital">
-              <a className="hover:text-accent transition-colors">Digital</a>
+              <div className="hover:text-accent transition-colors cursor-pointer">Digital</div>
             </Link>
             <Link href="/artwork">
-              <a className="hover:text-accent transition-colors">Artwork</a>
+              <div className="hover:text-accent transition-colors cursor-pointer">Artwork</div>
+            </Link>
+            <Link href="/contact">
+              <div className="hover:text-accent transition-colors cursor-pointer">Contact</div>
             </Link>
           </div>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-80 flex items-center justify-center bg-secondary/50 border-b border-border">
+      <section className="py-24 flex items-center justify-center bg-secondary/50 border-b border-border">
         <div className="container text-center">
           <h1 className="text-5xl md:text-6xl font-cormorant font-bold mb-4">Hand Drawn Collections</h1>
           <p className="text-lg text-foreground/70">
