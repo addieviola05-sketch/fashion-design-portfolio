@@ -228,10 +228,10 @@ export default function HandDrawn() {
                         </button>
                       </>
                     ) : (
-                      <div className="text-center flex items-center justify-center h-full group-hover:bg-black/20 transition-colors">
+                      <div className="text-center flex items-center justify-center h-full">
                         <div>
-                          <p className="text-foreground/50 text-sm group-hover:text-white/80 transition-colors">View Full Collection</p>
-                          <p className="text-accent text-xs mt-2 group-hover:text-white/80 transition-colors">PDF Presentation</p>
+                          <p className="text-foreground/50 text-sm">Collection imagery</p>
+                          <p className="text-foreground/30 text-xs mt-2">Coming soon</p>
                         </div>
                       </div>
                     )}

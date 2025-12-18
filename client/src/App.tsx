@@ -11,7 +11,6 @@ import SorrowOfAngels from "./pages/SorrowOfAngels";
 import Metamorphosis from "./pages/Metamorphosis";
 import SolarSynthesis from "./pages/SolarSynthesis";
 import PoppyWar from "./pages/PoppyWar";
-import FallOfTheRomanovs from "./pages/FallOfTheRomanovs";
 import Sewing from "./pages/Sewing";
 import Digital from "./pages/Digital";
 import Artwork from "./pages/Artwork";
@@ -27,7 +26,6 @@ function Router() {
       <Route path={"/metamorphosis"} component={Metamorphosis} />
       <Route path={"/solar-synthesis"} component={SolarSynthesis} />
       <Route path={"/the-poppy-war"} component={PoppyWar} />
-      <Route path={"/fall-of-the-romanovs"} component={FallOfTheRomanovs} />
       <Route path={"/sewing"} component={Sewing} />
       <Route path={"/digital"} component={Digital} />
       <Route path={"/artwork"} component={Artwork} />
