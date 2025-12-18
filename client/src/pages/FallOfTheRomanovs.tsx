@@ -52,33 +52,17 @@ export default function FallOfTheRomanovs() {
       {/* Navigation */}
       <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <nav className="container py-4 flex justify-between items-center">
-          <Link href="/">
-            <div className="hover:opacity-80 transition-opacity cursor-pointer">
-              <img src="/images/logo-monogram.png" alt="Addison Moore" className="h-12 w-auto" />
-            </div>
+          <Link href="/" className="hover:opacity-80 transition-opacity">
+            <img src="/images/logo-monogram.png" alt="Addison Moore" className="h-12 w-auto" />
           </Link>
           <div className="flex gap-6 text-sm">
-            <Link href="/">
-              <div className="hover:text-accent transition-colors cursor-pointer">Home</div>
-            </Link>
-            <Link href="/about">
-              <div className="hover:text-accent transition-colors cursor-pointer">About</div>
-            </Link>
-            <Link href="/hand-drawn">
-              <div className="hover:text-accent transition-colors cursor-pointer">Hand Drawn</div>
-            </Link>
-            <Link href="/sewing">
-              <div className="hover:text-accent transition-colors cursor-pointer">Sewing</div>
-            </Link>
-            <Link href="/digital">
-              <div className="hover:text-accent transition-colors cursor-pointer">Digital</div>
-            </Link>
-            <Link href="/artwork">
-              <div className="hover:text-accent transition-colors cursor-pointer">Artwork</div>
-            </Link>
-            <Link href="/contact">
-              <div className="hover:text-accent transition-colors cursor-pointer">Contact</div>
-            </Link>
+            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
+            <Link href="/about" className="hover:text-accent transition-colors">About</Link>
+            <Link href="/hand-drawn" className="hover:text-accent transition-colors">Hand Drawn</Link>
+            <Link href="/sewing" className="hover:text-accent transition-colors">Sewing</Link>
+            <Link href="/digital" className="hover:text-accent transition-colors">Digital</Link>
+            <Link href="/artwork" className="hover:text-accent transition-colors">Artwork</Link>
+            <Link href="/contact" className="hover:text-accent transition-colors">Contact</Link>
           </div>
         </nav>
       </header>
@@ -86,11 +70,9 @@ export default function FallOfTheRomanovs() {
       {/* Hero Section */}
       <section className="py-16 bg-secondary/30 border-b border-border">
         <div className="container">
-          <Link href="/hand-drawn">
-            <div className="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors cursor-pointer mb-6">
-              <ChevronLeft className="w-4 h-4" />
-              <span className="text-sm">Back to Collections</span>
-            </div>
+          <Link href="/hand-drawn" className="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors mb-6">
+            <ChevronLeft className="w-4 h-4" />
+            <span className="text-sm">Back to Collections</span>
           </Link>
           <h1 className="text-5xl md:text-6xl font-cormorant font-bold mb-4">Fall of the Romanovs</h1>
           <p className="text-lg text-foreground/70 mb-6">

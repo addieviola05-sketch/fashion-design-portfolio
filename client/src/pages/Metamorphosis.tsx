@@ -11,14 +11,6 @@ import { useState, useEffect } from "react";
 export default function Metamorphosis() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const carouselImages = [
-    "/images/metamorphosis/001.webp",
-    "/images/metamorphosis/002.webp",
-    "/images/metamorphosis/003.webp",
-    "/images/metamorphosis/004.webp",
-    "/images/metamorphosis/005.webp",
-  ];
-
   const galleryItems = [
     {
       id: 1,
@@ -51,6 +43,8 @@ export default function Metamorphosis() {
       image: "/images/metamorphosis/005.webp",
     },
   ];
+
+  const carouselImages = galleryItems.map((item) => item.image);
 
   // Auto-play carousel
   useEffect(() => {

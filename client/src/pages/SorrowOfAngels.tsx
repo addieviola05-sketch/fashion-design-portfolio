@@ -11,14 +11,6 @@ import { useState } from "react";
 export default function SorrowOfAngels() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const carouselImages = [
-    "/images/sorrow-of-angels/001.webp",
-    "/images/sorrow-of-angels/002.webp",
-    "/images/sorrow-of-angels/003.webp",
-    "/images/sorrow-of-angels/004.webp",
-    "/images/sorrow-of-angels/005.webp",
-  ];
-
   const galleryItems = [
     {
       id: 1,
@@ -51,6 +43,8 @@ export default function SorrowOfAngels() {
       image: "/images/sorrow-of-angels/005.webp",
     },
   ];
+
+  const carouselImages = galleryItems.map((item) => item.image);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
