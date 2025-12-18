@@ -5,14 +5,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export default function SolarSynthesis() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const carouselImages = [
-    "/collections/solar-synthesis/page-01.png",
-    "/collections/solar-synthesis/page-02.png",
-    "/collections/solar-synthesis/page-03.png",
-    "/collections/solar-synthesis/page-04.png",
-    "/collections/solar-synthesis/page-05.png",
-  ];
-
   const galleryImages = [
     "/collections/solar-synthesis/page-01.png",
     "/collections/solar-synthesis/page-02.png",
@@ -23,7 +15,28 @@ export default function SolarSynthesis() {
     "/collections/solar-synthesis/page-07.png",
     "/collections/solar-synthesis/page-08.png",
     "/collections/solar-synthesis/page-09.png",
+    "/collections/solar-synthesis/page-10.png",
+    "/collections/solar-synthesis/page-11.png",
+    "/collections/solar-synthesis/page-12.png",
+    "/collections/solar-synthesis/page-13.png",
+    "/collections/solar-synthesis/page-14.png",
+    "/collections/solar-synthesis/page-15.png",
+    "/collections/solar-synthesis/page-16.png",
+    "/collections/solar-synthesis/page-17.png",
+    "/collections/solar-synthesis/page-18.png",
+    "/collections/solar-synthesis/page-19.png",
+    "/collections/solar-synthesis/page-20.png",
+    "/collections/solar-synthesis/page-21.png",
+    "/collections/solar-synthesis/page-22.png",
+    "/collections/solar-synthesis/page-23.png",
+    "/collections/solar-synthesis/page-24.png",
+    "/collections/solar-synthesis/page-25.png",
+    "/collections/solar-synthesis/page-26.png",
+    "/collections/solar-synthesis/page-27.png",
+    "/collections/solar-synthesis/page-28.png",
   ];
+
+  const carouselImages = galleryImages;
 
   // Auto-play carousel
   useEffect(() => {

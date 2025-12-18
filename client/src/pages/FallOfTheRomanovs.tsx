@@ -5,14 +5,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export default function FallOfTheRomanovs() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const carouselImages = [
-    "/collections/fall-of-the-romanovs/page-01.png",
-    "/collections/fall-of-the-romanovs/page-02.png",
-    "/collections/fall-of-the-romanovs/page-03.png",
-    "/collections/fall-of-the-romanovs/page-04.png",
-    "/collections/fall-of-the-romanovs/page-05.png",
-  ];
-
   const galleryImages = [
     "/collections/fall-of-the-romanovs/page-01.png",
     "/collections/fall-of-the-romanovs/page-02.png",
@@ -30,6 +22,8 @@ export default function FallOfTheRomanovs() {
     "/collections/fall-of-the-romanovs/page-14.png",
     "/collections/fall-of-the-romanovs/page-15.png",
   ];
+
+  const carouselImages = galleryImages;
 
   // Auto-play carousel
   useEffect(() => {

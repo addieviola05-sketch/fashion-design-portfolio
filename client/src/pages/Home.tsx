@@ -81,11 +81,11 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url(/images/hero-fashion.jpg)",
+            backgroundImage: "url(/images/hero-backdrop.jpg)",
             transform: `translateY(${scrollY * 0.5}px)`,
           }}
         >
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
 
         {/* Hero Content */}
@@ -93,17 +93,17 @@ export default function Home() {
           <div className="mb-8">
             <img src="/images/logo-full.png" alt="Addison Moore" className="h-32 md:h-40 w-auto mx-auto drop-shadow-lg" />
           </div>
-          <p className="text-xl md:text-2xl text-white/90 font-raleway mb-8 drop-shadow-md">
-            Where Fabric Meets Character and Style
+          <p className="text-xl md:text-2xl text-amber-50/85 font-raleway mb-8 drop-shadow-md">
+            Design as Narrative
           </p>
-          <p className="text-lg text-white/80 font-raleway max-w-2xl mx-auto drop-shadow-md">
+          <p className="text-lg text-amber-50/75 font-raleway max-w-2xl mx-auto drop-shadow-md">
             Exploring the intersection of costume design, fashion, and artistic expression through
             sketches, garments, and digital creations.
           </p>
 
           {/* Scroll Indicator */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <ChevronDown className="w-8 h-8 text-white/60" />
+            <ChevronDown className="w-8 h-8 text-amber-50/60" />
           </div>
         </div>
       </section>
@@ -142,8 +142,12 @@ export default function Home() {
                 >
                   <div className="relative overflow-hidden rounded-lg bg-secondary/50 p-8 md:p-12 hover:bg-secondary transition-all duration-300 border border-border hover:border-accent">
                     {/* Icon */}
-                    <div className="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                      {section.icon}
+                    <div className="mb-6 group-hover:scale-110 transition-transform duration-300 h-20 w-20">
+                      <img
+                        src={`/images/icon-${section.id}.png`}
+                        alt={section.title}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
 
                     {/* Title */}

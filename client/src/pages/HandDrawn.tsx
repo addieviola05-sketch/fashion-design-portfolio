@@ -65,7 +65,13 @@ export default function HandDrawn() {
       tagline: "Deconstructed Androgynous Utilitarianism",
       description: "A female-leaning androgynous deconstructed utilitarianism collection informed by militarism, ritual, and psychological transformation. Drawing from historical Chinese dress, military uniforms, and the philosophical cost of divinity, this collection is inspired by R.F. Kuang's 'The Poppy War.' Sharp utility pockets, asymmetrical closures, and layered construction create a visual narrative of power, sacrifice, and transcendence through fashion.",
       inspiration: ["The Poppy War (Novel)", "Historical Chinese Dress", "Military Uniforms", "Psychological Transformation", "Ritualism"],
-      carouselImages: [],
+      carouselImages: [
+        "/collections/the-poppy-war/poppy-page-01.png",
+        "/collections/the-poppy-war/poppy-page-02.png",
+        "/collections/the-poppy-war/poppy-page-03.png",
+        "/collections/the-poppy-war/poppy-page-04.png",
+        "/collections/the-poppy-war/poppy-page-05.png",
+      ],
     },
     {
       id: "metamorphosis",
@@ -74,11 +80,11 @@ export default function HandDrawn() {
       description: "This collection interprets the stages of lepidopteran transformation through a chic, Stella McCartney–influenced lens. Pairing clean, elongated silhouettes and restrained tailoring with layered draping, pleating, and distressed textures, each piece evokes the shedding of skin, the fragility of insect wings, and the containment of growth. The collection explores themes of vulnerability, transformation, and the beauty found in decay.",
       inspiration: ["Lepidopteran Metamorphosis", "Stella McCartney", "Distressed Textiles", "Layered Draping", "Growth & Decay"],
       carouselImages: [
-        "/images/metamorphosis/001.webp",
-        "/images/metamorphosis/002.webp",
-        "/images/metamorphosis/003.webp",
-        "/images/metamorphosis/004.webp",
-        "/images/metamorphosis/005.webp",
+        "/images/metamorphosis/metamorphosis-page-01.png",
+        "/images/metamorphosis/metamorphosis-page-02.png",
+        "/images/metamorphosis/metamorphosis-page-03.png",
+        "/images/metamorphosis/metamorphosis-page-04.png",
+        "/images/metamorphosis/metamorphosis-page-05.png",
       ],
     },
     {
@@ -87,7 +93,13 @@ export default function HandDrawn() {
       tagline: "Edwardian Drapery & Historical Narrative",
       description: "A drapery-based collection inspired by Pittock Mansion's rich history, particularly the story of Georgiana Pittock. This collection reinterprets Edwardian fashion through a modern lens, honoring the elegance and complexity of early 20th-century silhouettes. Flowing fabrics, intricate pleating, and romantic draping create pieces that feel both historically grounded and contemporary.",
       inspiration: ["Pittock Mansion", "Georgiana Pittock", "Edwardian Fashion", "Historical Drapery", "Modern Interpretation"],
-      carouselImages: [],
+      carouselImages: [
+        "/collections/beyond-pittock/pittock-page-01.png",
+        "/collections/beyond-pittock/pittock-page-02.png",
+        "/collections/beyond-pittock/pittock-page-03.png",
+        "/collections/beyond-pittock/pittock-page-04.png",
+        "/collections/beyond-pittock/pittock-page-05.png",
+      ],
     },
     {
       id: "opposite-designer",
@@ -95,7 +107,13 @@ export default function HandDrawn() {
       tagline: "Space Age Geometry & Calculated Revenge",
       description: "This collection merges Pierre Cardin's Space Age geometry and modular tailoring with fencing and militaristic references from Alexandre Dumas' 'The Count of Monte Cristo.' Using sharp, architectural silhouettes, segmented construction, circular cut-outs, and layered armor-like panels, each piece translates Edmond Dantès' calculated revenge into controlled, futuristic power dressing. Form becomes function; geometry becomes narrative.",
       inspiration: ["Pierre Cardin", "Space Age Design", "The Count of Monte Cristo", "Fencing", "Modular Tailoring", "Futurism"],
-      carouselImages: [],
+      carouselImages: [
+        "/collections/opposite-designer/cardin-page-01.png",
+        "/collections/opposite-designer/cardin-page-02.png",
+        "/collections/opposite-designer/cardin-page-03.png",
+        "/collections/opposite-designer/cardin-page-04.png",
+        "/collections/opposite-designer/cardin-page-05.png",
+      ],
     },
     {
       id: "fall-of-the-romanovs",
@@ -136,33 +154,17 @@ export default function HandDrawn() {
       {/* Navigation */}
       <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <nav className="container py-4 flex justify-between items-center">
-          <Link href="/">
-            <div className="hover:opacity-80 transition-opacity cursor-pointer">
-              <img src="/images/logo-monogram.png" alt="Addison Moore" className="h-12 w-auto" />
-            </div>
+          <Link href="/" className="hover:opacity-80 transition-opacity">
+            <img src="/images/logo-monogram.png" alt="Addison Moore" className="h-12 w-auto" />
           </Link>
           <div className="flex gap-6 text-sm">
-            <Link href="/">
-              <div className="hover:text-accent transition-colors cursor-pointer">Home</div>
-            </Link>
-            <Link href="/about">
-              <div className="hover:text-accent transition-colors cursor-pointer">About</div>
-            </Link>
-            <Link href="/hand-drawn">
-              <div className="hover:text-accent transition-colors cursor-pointer">Hand Drawn</div>
-            </Link>
-            <Link href="/sewing">
-              <div className="hover:text-accent transition-colors cursor-pointer">Sewing</div>
-            </Link>
-            <Link href="/digital">
-              <div className="hover:text-accent transition-colors cursor-pointer">Digital</div>
-            </Link>
-            <Link href="/artwork">
-              <div className="hover:text-accent transition-colors cursor-pointer">Artwork</div>
-            </Link>
-            <Link href="/contact">
-              <div className="hover:text-accent transition-colors cursor-pointer">Contact</div>
-            </Link>
+            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
+            <Link href="/about" className="hover:text-accent transition-colors">About</Link>
+            <Link href="/hand-drawn" className="hover:text-accent transition-colors">Hand Drawn</Link>
+            <Link href="/sewing" className="hover:text-accent transition-colors">Sewing</Link>
+            <Link href="/digital" className="hover:text-accent transition-colors">Digital</Link>
+            <Link href="/artwork" className="hover:text-accent transition-colors">Artwork</Link>
+            <Link href="/contact" className="hover:text-accent transition-colors">Contact</Link>
           </div>
         </nav>
       </header>
@@ -215,8 +217,8 @@ export default function HandDrawn() {
                 </div>
 
                 {/* Carousel Preview */}
-                <Link href={`/${collection.id}`}>
-                  <div className={`relative bg-secondary/30 rounded-lg border border-border overflow-hidden group cursor-pointer ${index % 2 === 1 ? "md:col-start-1 md:row-start-1" : ""}`} style={{aspectRatio: '16 / 9'}}>
+                <div className={`relative bg-secondary/30 rounded-lg border border-border overflow-hidden group cursor-pointer ${index % 2 === 1 ? "md:col-start-1 md:row-start-1" : ""}`} style={{aspectRatio: '16 / 9'}}>
+                  <Link href={`/${collection.id}`} className="absolute inset-0 z-0">
                     {collection.carouselImages && collection.carouselImages.length > 0 ? (
                       <>
                         <img
@@ -225,22 +227,8 @@ export default function HandDrawn() {
                           className="w-full h-full object-cover group-hover:opacity-80 transition-opacity"
                         />
                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                          <span className="text-white/0 group-hover:text-white/80 text-sm font-semibold transition-all">View Collection</span>
+                          <span className="text-amber-50/0 group-hover:text-amber-50/80 text-sm font-semibold transition-all">View Collection</span>
                         </div>
-
-                        {/* Carousel Controls */}
-                        <button
-                          onClick={(e) => prevCarouselSlide(e, collection.id, collection.carouselImages.length)}
-                          className="absolute left-2 top-1/2 transform -translate-y-1/2 p-1 bg-background/80 hover:bg-background text-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-10"
-                        >
-                          <ChevronLeft className="w-4 h-4" />
-                        </button>
-                        <button
-                          onClick={(e) => nextCarouselSlide(e, collection.id, collection.carouselImages.length)}
-                          className="absolute right-2 top-1/2 transform -translate-y-1/2 p-1 bg-background/80 hover:bg-background text-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-10"
-                        >
-                          <ChevronRight className="w-4 h-4" />
-                        </button>
                       </>
                     ) : (
                       <div className="text-center flex items-center justify-center h-full">
@@ -250,8 +238,26 @@ export default function HandDrawn() {
                         </div>
                       </div>
                     )}
-                  </div>
-                </Link>
+                  </Link>
+
+                  {/* Carousel Controls */}
+                  {collection.carouselImages && collection.carouselImages.length > 0 && (
+                    <>
+                      <button
+                        onClick={(e) => prevCarouselSlide(e, collection.id, collection.carouselImages.length)}
+                        className="absolute left-2 top-1/2 transform -translate-y-1/2 p-1 bg-background/80 hover:bg-background text-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-10"
+                      >
+                        <ChevronLeft className="w-4 h-4" />
+                      </button>
+                      <button
+                        onClick={(e) => nextCarouselSlide(e, collection.id, collection.carouselImages.length)}
+                        className="absolute right-2 top-1/2 transform -translate-y-1/2 p-1 bg-background/80 hover:bg-background text-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-10"
+                      >
+                        <ChevronRight className="w-4 h-4" />
+                      </button>
+                    </>
+                  )}
+                </div>
 
                 {/* Divider */}
                 {index < collections.length - 1 && (

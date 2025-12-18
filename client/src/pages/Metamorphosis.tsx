@@ -12,36 +12,28 @@ export default function Metamorphosis() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const galleryItems = [
-    {
-      id: 1,
-      title: "Title Slide",
-      description: "Collection introduction with lepidopteran transformation inspiration",
-      image: "/images/metamorphosis/001.webp",
-    },
-    {
-      id: 2,
-      title: "About Metamorphosis",
-      description: "Conceptual foundation exploring biological transformation and renewal",
-      image: "/images/metamorphosis/002.webp",
-    },
-    {
-      id: 3,
-      title: "Aspects of Metamorphosis",
-      description: "Six stages of butterfly lifecycle: Egg, Larvae, Moulting, Chrysalis, Imago, Decay",
-      image: "/images/metamorphosis/003.webp",
-    },
-    {
-      id: 4,
-      title: "Mood & Inspiration",
-      description: "Visual references and design inspiration palette",
-      image: "/images/metamorphosis/004.webp",
-    },
-    {
-      id: 5,
-      title: "Customer Profile",
-      description: "Target wearer and styling narrative",
-      image: "/images/metamorphosis/005.webp",
-    },
+    { id: 1, title: "Title Slide", description: "Collection introduction", image: "/images/metamorphosis/metamorphosis-page-01.png" },
+    { id: 2, title: "Slide 2", description: "Design exploration", image: "/images/metamorphosis/metamorphosis-page-02.png" },
+    { id: 3, title: "Slide 3", description: "Concept development", image: "/images/metamorphosis/metamorphosis-page-03.png" },
+    { id: 4, title: "Slide 4", description: "Mood & inspiration", image: "/images/metamorphosis/metamorphosis-page-04.png" },
+    { id: 5, title: "Slide 5", description: "Customer profile", image: "/images/metamorphosis/metamorphosis-page-05.png" },
+    { id: 6, title: "Slide 6", description: "Design development", image: "/images/metamorphosis/metamorphosis-page-06.png" },
+    { id: 7, title: "Slide 7", description: "Silhouette studies", image: "/images/metamorphosis/metamorphosis-page-07.png" },
+    { id: 8, title: "Slide 8", description: "Material & color", image: "/images/metamorphosis/metamorphosis-page-08.png" },
+    { id: 9, title: "Slide 9", description: "Construction details", image: "/images/metamorphosis/metamorphosis-page-09.png" },
+    { id: 10, title: "Slide 10", description: "Design iteration", image: "/images/metamorphosis/metamorphosis-page-10.png" },
+    { id: 11, title: "Slide 11", description: "Garment details", image: "/images/metamorphosis/metamorphosis-page-11.png" },
+    { id: 12, title: "Slide 12", description: "Final pieces", image: "/images/metamorphosis/metamorphosis-page-12.png" },
+    { id: 13, title: "Slide 13", description: "Collection showcase", image: "/images/metamorphosis/metamorphosis-page-13.png" },
+    { id: 14, title: "Slide 14", description: "Design details", image: "/images/metamorphosis/metamorphosis-page-14.png" },
+    { id: 15, title: "Slide 15", description: "Styling", image: "/images/metamorphosis/metamorphosis-page-15.png" },
+    { id: 16, title: "Slide 16", description: "Collection overview", image: "/images/metamorphosis/metamorphosis-page-16.png" },
+    { id: 17, title: "Slide 17", description: "Design narrative", image: "/images/metamorphosis/metamorphosis-page-17.png" },
+    { id: 18, title: "Slide 18", description: "Garment construction", image: "/images/metamorphosis/metamorphosis-page-18.png" },
+    { id: 19, title: "Slide 19", description: "Final collection", image: "/images/metamorphosis/metamorphosis-page-19.png" },
+    { id: 20, title: "Slide 20", description: "Collection summary", image: "/images/metamorphosis/metamorphosis-page-20.png" },
+    { id: 21, title: "Slide 21", description: "Design conclusion", image: "/images/metamorphosis/metamorphosis-page-21.png" },
+    { id: 22, title: "Slide 22", description: "End slide", image: "/images/metamorphosis/metamorphosis-page-22.png" },
   ];
 
   const carouselImages = galleryItems.map((item) => item.image);
