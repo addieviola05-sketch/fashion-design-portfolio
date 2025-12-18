@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useAuth } from "@/_core/hooks/useAuth";
 
 /**
  * Home Page - Fashion & Costume Designer Portfolio
@@ -10,6 +11,10 @@ import { useEffect, useState } from "react";
  */
 
 export default function Home() {
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  let { user, loading, error, isAuthenticated, logout } = useAuth();
+
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -60,8 +65,11 @@ export default function Home() {
             <img src="/images/logo-monogram.png" alt="Addison Moore" className="h-12 w-auto" />
           </div>
           <div className="flex gap-6 text-sm">
-            <a href="#about" className="hover:text-accent transition-colors">About</a>
-            <a href="#collections" className="hover:text-accent transition-colors">Collections</a>
+            <a href="/about" className="hover:text-accent transition-colors">About</a>
+            <a href="/hand-drawn" className="hover:text-accent transition-colors">Hand Drawn</a>
+            <a href="/sewing" className="hover:text-accent transition-colors">Sewing</a>
+            <a href="/digital" className="hover:text-accent transition-colors">Digital</a>
+            <a href="/artwork" className="hover:text-accent transition-colors">Artwork</a>
             <a href="#contact" className="hover:text-accent transition-colors">Contact</a>
           </div>
         </nav>

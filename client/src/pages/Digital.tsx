@@ -54,6 +54,18 @@ export default function Digital() {
             <Link href="/about">
               <a className="hover:text-accent transition-colors">About</a>
             </Link>
+            <Link href="/hand-drawn">
+              <a className="hover:text-accent transition-colors">Hand Drawn</a>
+            </Link>
+            <Link href="/sewing">
+              <a className="hover:text-accent transition-colors">Sewing</a>
+            </Link>
+            <Link href="/digital">
+              <a className="hover:text-accent transition-colors">Digital</a>
+            </Link>
+            <Link href="/artwork">
+              <a className="hover:text-accent transition-colors">Artwork</a>
+            </Link>
           </div>
         </nav>
       </header>

@@ -7,17 +7,25 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import HandDrawn from "./pages/HandDrawn";
+import SorrowOfAngels from "./pages/SorrowOfAngels";
+import Metamorphosis from "./pages/Metamorphosis";
+import SolarSynthesis from "./pages/SolarSynthesis";
+import PoppyWar from "./pages/PoppyWar";
 import Sewing from "./pages/Sewing";
 import Digital from "./pages/Digital";
 import Artwork from "./pages/Artwork";
 
-
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path={"\\"} component={Home} />
       <Route path={"/about"} component={About} />
       <Route path={"/hand-drawn"} component={HandDrawn} />
+      <Route path={"/sorrow-of-angels"} component={SorrowOfAngels} />
+      <Route path={"/metamorphosis"} component={Metamorphosis} />
+      <Route path={"/solar-synthesis"} component={SolarSynthesis} />
+      <Route path={"/the-poppy-war"} component={PoppyWar} />
       <Route path={"/sewing"} component={Sewing} />
       <Route path={"/digital"} component={Digital} />
       <Route path={"/artwork"} component={Artwork} />
