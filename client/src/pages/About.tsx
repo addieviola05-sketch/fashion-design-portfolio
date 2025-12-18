@@ -90,6 +90,11 @@ export default function About() {
             Costume Designer & Fashion Design Student
           </p>
           <div className="w-12 h-1 bg-accent mx-auto mt-6" />
+          <Link href="/resume">
+            <a className="inline-block mt-8 px-6 py-3 bg-accent text-background rounded-lg hover:bg-accent/90 transition-colors font-semibold">
+              View Resume
+            </a>
+          </Link>
         </div>
       </section>
 

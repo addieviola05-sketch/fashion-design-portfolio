@@ -17,6 +17,7 @@ import OppositeDesigner from "./pages/OppositeDesigner";
 import Sewing from "./pages/Sewing";
 import Digital from "./pages/Digital";
 import Artwork from "./pages/Artwork";
+import Resume from "./pages/Resume";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -35,6 +36,7 @@ function Router() {
       <Route path={"/sewing"} component={Sewing} />
       <Route path={"/digital"} component={Digital} />
       <Route path={"/artwork"} component={Artwork} />
+      <Route path={"/resume"} component={Resume} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

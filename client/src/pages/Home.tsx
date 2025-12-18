@@ -133,9 +133,9 @@ export default function Home() {
                 'artwork': '/artwork',
               };
               return (
-              <Link key={section.id} href={routeMap[section.id] || '/'}>
+              <a key={section.id} href={routeMap[section.id] || '/'} className="block">
                 <div
-                  className="group cursor-pointer block"
+                  className="group cursor-pointer"
                   style={{
                     animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`,
                   }}
@@ -162,7 +162,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </Link>
+              </a>
             );
             })}
           </div>
