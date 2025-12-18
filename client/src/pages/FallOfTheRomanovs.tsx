@@ -6,23 +6,23 @@ export default function FallOfTheRomanovs() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const carouselImages = [
-    "/collections/fall-of-the-romanovs/page-1.png",
-    "/collections/fall-of-the-romanovs/page-2.png",
-    "/collections/fall-of-the-romanovs/page-3.png",
-    "/collections/fall-of-the-romanovs/page-4.png",
-    "/collections/fall-of-the-romanovs/page-5.png",
+    "/collections/fall-of-the-romanovs/page-01.png",
+    "/collections/fall-of-the-romanovs/page-02.png",
+    "/collections/fall-of-the-romanovs/page-03.png",
+    "/collections/fall-of-the-romanovs/page-04.png",
+    "/collections/fall-of-the-romanovs/page-05.png",
   ];
 
   const galleryImages = [
-    "/collections/fall-of-the-romanovs/page-1.png",
-    "/collections/fall-of-the-romanovs/page-2.png",
-    "/collections/fall-of-the-romanovs/page-3.png",
-    "/collections/fall-of-the-romanovs/page-4.png",
-    "/collections/fall-of-the-romanovs/page-5.png",
-    "/collections/fall-of-the-romanovs/page-6.png",
-    "/collections/fall-of-the-romanovs/page-7.png",
-    "/collections/fall-of-the-romanovs/page-8.png",
-    "/collections/fall-of-the-romanovs/page-9.png",
+    "/collections/fall-of-the-romanovs/page-01.png",
+    "/collections/fall-of-the-romanovs/page-02.png",
+    "/collections/fall-of-the-romanovs/page-03.png",
+    "/collections/fall-of-the-romanovs/page-04.png",
+    "/collections/fall-of-the-romanovs/page-05.png",
+    "/collections/fall-of-the-romanovs/page-06.png",
+    "/collections/fall-of-the-romanovs/page-07.png",
+    "/collections/fall-of-the-romanovs/page-08.png",
+    "/collections/fall-of-the-romanovs/page-09.png",
     "/collections/fall-of-the-romanovs/page-10.png",
     "/collections/fall-of-the-romanovs/page-11.png",
     "/collections/fall-of-the-romanovs/page-12.png",
