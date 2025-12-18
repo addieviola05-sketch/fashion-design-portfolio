@@ -97,7 +97,13 @@ export default function HandDrawn() {
       tagline: "Decadence & Soviet Brutalism",
       description: "A day-to-evening collection exploring the contradicting aesthetics of Russian monarchy's decadence and the transition into Soviet brutalism. This collection juxtaposes ornate, opulent detailing with stark, geometric forms. Rich fabrics meet austere construction; embellishment clashes with minimalism. The result is a powerful visual narrative of political upheaval, cultural transformation, and the collision of two aesthetic worlds.",
       inspiration: ["Russian Monarchy", "Edwardian Opulence", "Soviet Brutalism", "Political Transition", "Aesthetic Contrast"],
-      carouselImages: [],
+      carouselImages: [
+        "/collections/fall-of-the-romanovs/page-1.png",
+        "/collections/fall-of-the-romanovs/page-2.png",
+        "/collections/fall-of-the-romanovs/page-3.png",
+        "/collections/fall-of-the-romanovs/page-4.png",
+        "/collections/fall-of-the-romanovs/page-5.png",
+      ],
     },
   ];
 

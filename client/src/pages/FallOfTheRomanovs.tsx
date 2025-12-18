@@ -1,7 +1,52 @@
+import { useState, useEffect } from "react";
 import { Link } from "wouter";
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function FallOfTheRomanovs() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const carouselImages = [
+    "/collections/fall-of-the-romanovs/page-1.png",
+    "/collections/fall-of-the-romanovs/page-2.png",
+    "/collections/fall-of-the-romanovs/page-3.png",
+    "/collections/fall-of-the-romanovs/page-4.png",
+    "/collections/fall-of-the-romanovs/page-5.png",
+  ];
+
+  const galleryImages = [
+    "/collections/fall-of-the-romanovs/page-1.png",
+    "/collections/fall-of-the-romanovs/page-2.png",
+    "/collections/fall-of-the-romanovs/page-3.png",
+    "/collections/fall-of-the-romanovs/page-4.png",
+    "/collections/fall-of-the-romanovs/page-5.png",
+    "/collections/fall-of-the-romanovs/page-6.png",
+    "/collections/fall-of-the-romanovs/page-7.png",
+    "/collections/fall-of-the-romanovs/page-8.png",
+    "/collections/fall-of-the-romanovs/page-9.png",
+    "/collections/fall-of-the-romanovs/page-10.png",
+    "/collections/fall-of-the-romanovs/page-11.png",
+    "/collections/fall-of-the-romanovs/page-12.png",
+    "/collections/fall-of-the-romanovs/page-13.png",
+    "/collections/fall-of-the-romanovs/page-14.png",
+    "/collections/fall-of-the-romanovs/page-15.png",
+  ];
+
+  // Auto-play carousel
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [carouselImages.length]);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
@@ -38,7 +83,7 @@ export default function FallOfTheRomanovs() {
         </nav>
       </header>
 
-      {/* Collection Header */}
+      {/* Hero Section */}
       <section className="py-16 bg-secondary/30 border-b border-border">
         <div className="container">
           <Link href="/hand-drawn">
@@ -48,43 +93,78 @@ export default function FallOfTheRomanovs() {
             </div>
           </Link>
           <h1 className="text-5xl md:text-6xl font-cormorant font-bold mb-4">Fall of the Romanovs</h1>
-          <p className="text-xl text-foreground/70 mb-6">A day into evening collection exploring the contradicting aesthetics of Russian monarchy's decadence and the transition into Soviet brutalism.</p>
-          
-          <div className="flex flex-wrap gap-3 mt-8">
-            <span className="px-4 py-2 bg-secondary/50 border border-accent/30 rounded-full text-sm text-foreground/70">Russian Monarchy</span>
-            <span className="px-4 py-2 bg-secondary/50 border border-accent/30 rounded-full text-sm text-foreground/70">Soviet Brutalism</span>
-            <span className="px-4 py-2 bg-secondary/50 border border-accent/30 rounded-full text-sm text-foreground/70">Decadence</span>
-            <span className="px-4 py-2 bg-secondary/50 border border-accent/30 rounded-full text-sm text-foreground/70">Transformation</span>
-            <span className="px-4 py-2 bg-secondary/50 border border-accent/30 rounded-full text-sm text-foreground/70">Edwardian Fashion</span>
+          <p className="text-lg text-foreground/70 mb-6">
+            A day into evening collection exploring the contradicting aesthetics of Russian monarchy's decadence and the transition into Soviet brutalism.
+          </p>
+          <div className="flex gap-3 flex-wrap">
+            <span className="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm font-semibold">Historical Reference</span>
+            <span className="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm font-semibold">Decadence</span>
+            <span className="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm font-semibold">Soviet Brutalism</span>
+            <span className="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm font-semibold">Transition</span>
           </div>
         </div>
       </section>
 
-      {/* PDF Viewer */}
+      {/* Carousel */}
       <section className="py-16">
-        <div className="container max-w-4xl">
-          <div className="bg-secondary/30 rounded-lg border border-border overflow-hidden">
-            <iframe
-              src="https://docs.google.com/gview?url=https://storage.googleapis.com/manus-prod-public/uploads/romanov.pdf&embedded=true"
-              style={{width: '100%', height: '800px', border: 'none'}}
-              title="Fall of the Romanovs Collection"
+        <div className="container max-w-5xl">
+          <div className="relative bg-secondary/30 rounded-lg border border-border overflow-hidden" style={{ aspectRatio: "16/9" }}>
+            <img
+              src={carouselImages[currentSlide]}
+              alt={`Fall of the Romanovs slide ${currentSlide + 1}`}
+              className="w-full h-full object-contain"
             />
-          </div>
-          <div className="mt-6 text-center">
-            <a
-              href="https://storage.googleapis.com/manus-prod-public/uploads/romanov.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-6 py-3 bg-accent text-background rounded-lg hover:bg-accent/90 transition-colors font-semibold"
+            
+            {/* Carousel Controls */}
+            <button
+              onClick={prevSlide}
+              className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-background/80 hover:bg-background transition-colors rounded-full z-10"
             >
-              Download Full PDF
-            </a>
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+            <button
+              onClick={nextSlide}
+              className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-background/80 hover:bg-background transition-colors rounded-full z-10"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
+
+            {/* Slide Counter */}
+            <div className="absolute bottom-4 right-4 px-3 py-1 bg-background/80 rounded-full text-sm font-semibold">
+              {currentSlide + 1} / {carouselImages.length}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Full Gallery */}
+      <section className="py-16 bg-secondary/30">
+        <div className="container">
+          <h2 className="text-4xl font-cormorant font-bold mb-12">Full Collection</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {galleryImages.map((image, index) => (
+              <div
+                key={index}
+                className="bg-background rounded-lg border border-border overflow-hidden hover:border-accent transition-colors group"
+              >
+                <div className="relative bg-secondary/50 overflow-hidden" style={{ aspectRatio: "16/9" }}>
+                  <img
+                    src={image}
+                    alt={`Slide ${index + 1}`}
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-4">
+                  <p className="text-sm text-foreground/70">Slide {index + 1}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border py-12 bg-secondary/30">
+      <footer className="border-t border-border py-12">
         <div className="container text-center text-foreground/60 text-sm">
           <p>© 2025 Addison Moore. All rights reserved.</p>
         </div>
