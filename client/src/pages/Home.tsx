@@ -233,7 +233,7 @@ export default function Home() {
               Get in Touch
             </a>
             <a
-              href="#"
+              href="/resume"
               className="px-8 py-3 border border-accent text-accent rounded-lg font-raleway font-semibold hover:bg-accent/10 transition-colors"
             >
               View Resume
