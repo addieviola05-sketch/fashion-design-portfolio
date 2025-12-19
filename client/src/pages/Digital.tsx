@@ -44,12 +44,12 @@ export default function Digital() {
         "Hearthmoss Floral Rowan Empire Henley",
       ],
       colorPalette: [
-        "Cloverwake - Green, gold, and cream plaid",
-        "Garnet Harvest - Burgundy and green plaid",
-        "Witchwell - Blue and rust plaid",
-        "Hearthmoss - Green with golden flowers",
-        "Cranewife - Burgundy with pink florals",
-        "Bluebell - Blue with red florals",
+        { name: "Cloverwake", description: "Green, gold, and cream plaid", colors: ["#2d5016", "#d4a574", "#f5f1e8"] },
+        { name: "Garnet Harvest", description: "Burgundy and green plaid", colors: ["#6b2c2c", "#2d5016", "#e8d4c4"] },
+        { name: "Witchwell", description: "Blue and rust plaid", colors: ["#2c3e50", "#8b4513", "#d4a574"] },
+        { name: "Hearthmoss", description: "Green with golden flowers", colors: ["#3d5a3d", "#d4a574", "#8b7355"] },
+        { name: "Cranewife", description: "Burgundy with pink florals", colors: ["#6b2c2c", "#c97a9a", "#f5e6e8"] },
+        { name: "Bluebell", description: "Blue with red florals", colors: ["#3d5a7d", "#a84c4c", "#e8d4d4"] },
       ],
       tools: ["Adobe Illustrator", "Digital Design", "Pattern Design", "Color Theory", "Technical Specifications"],
       pdfUrl: "/Moore,AddisonFinalProject.pdf",
@@ -80,11 +80,11 @@ export default function Digital() {
         "Elevated grunge styling with historical references",
       ],
       colorPalette: [
-        "Deep burgundy and wine tones",
-        "Rich forest greens",
-        "Charcoal and black accents",
-        "Cream and ivory contrast details",
-        "Jewel-tone blues and purples",
+        { name: "Deep Burgundy", description: "Wine and burgundy tones", colors: ["#5c1a1a", "#8b3a3a", "#c97a7a"] },
+        { name: "Forest Green", description: "Rich forest greens", colors: ["#1a3a2a", "#2d5a3d", "#4a7a5a"] },
+        { name: "Charcoal", description: "Charcoal and black accents", colors: ["#2a2a2a", "#4a4a4a", "#6a6a6a"] },
+        { name: "Cream", description: "Cream and ivory contrast details", colors: ["#f5f1e8", "#e8dcc8", "#d4c4a8"] },
+        { name: "Jewel Tones", description: "Jewel-tone blues and purples", colors: ["#2c3e7a", "#4a3a7a", "#6a4a8a"] },
       ],
       tools: ["Adobe Illustrator", "Digital Design", "Silhouette Development", "Color Theory", "Historical Research"],
       pdfUrl: "/Moore,AddisonDLYHFinal.ai",
@@ -226,13 +226,27 @@ export default function Digital() {
                   <h3 className="text-2xl font-cormorant font-bold mb-6">
                     Color Palette
                   </h3>
-                  <div className="space-y-3">
-                    {collection.colorPalette.map((color, idx) => (
-                      <div
-                        key={idx}
-                        className="p-4 bg-secondary/30 border border-border rounded text-foreground/80"
-                      >
-                        {color}
+                  <div className="space-y-4">
+                    {collection.colorPalette.map((palette, idx) => (
+                      <div key={idx} className="flex gap-4 items-start">
+                        {/* Color Swatches */}
+                        <div className="flex gap-2 flex-shrink-0">
+                          {palette.colors.map((color, colorIdx) => (
+                            <div
+                              key={colorIdx}
+                              className="w-16 h-16 rounded-lg border border-border/50 shadow-sm"
+                              style={{ backgroundColor: color }}
+                              title={color}
+                            />
+                          ))}
+                        </div>
+                        {/* Color Description */}
+                        <div className="flex-1 pt-1">
+                          <h4 className="font-cormorant font-bold text-foreground mb-1">
+                            {palette.name}
+                          </h4>
+                          <p className="text-foreground/70 text-sm">{palette.description}</p>
+                        </div>
                       </div>
                     ))}
                   </div>
