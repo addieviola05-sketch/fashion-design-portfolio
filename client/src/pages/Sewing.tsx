@@ -310,13 +310,13 @@ export default function Sewing() {
                 className="grid md:grid-cols-2 gap-12 items-start relative p-8 rounded-lg"
                 style={{
                   animation: `fadeInUp 0.6s ease-out ${index * 0.2}s both`,
-                  backgroundImage: project.id === 1 ? 'url(/images/backgrounds/corsaire-ocean.jpeg)' : project.id === 7 ? 'url(/images/backgrounds/dirndl-forest.jpg)' : project.id === 6 ? 'url(/images/backgrounds/regency-palace.jpg)' : project.id === 3 ? 'url(/images/backgrounds/evening-gown-corridor.jpg)' : 'none',
+                  backgroundImage: project.id === 1 ? 'url(/images/backgrounds/corsaire-ocean.jpeg)' : project.id === 7 ? 'url(/images/backgrounds/dirndl-forest.jpg)' : project.id === 6 ? 'url(/images/backgrounds/regency-palace.jpg)' : project.id === 3 ? 'url(/images/backgrounds/evening-gown-corridor.jpg)' : project.id === 5 ? 'url(/images/backgrounds/cape-alley.jpg)' : project.id === 4 ? 'url(/images/backgrounds/wedding-dress-flowers.jpeg)' : project.id === 2 ? 'url(/images/backgrounds/tartan-canyon.jpg)' : project.id === 8 ? 'url(/images/backgrounds/shacket-peonies.jpeg)' : 'none',
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   backgroundAttachment: 'fixed',
                 }}
               >
-                {[1, 7, 6, 3].includes(project.id) && <div className="absolute inset-0 bg-black/60 rounded-lg" />}
+                {[1, 7, 6, 3, 5, 4, 2, 8].includes(project.id) && <div className="absolute inset-0 bg-black/60 rounded-lg" />}
                 {/* Images */}
                 <div
                   className={`space-y-4 relative z-10 ${
