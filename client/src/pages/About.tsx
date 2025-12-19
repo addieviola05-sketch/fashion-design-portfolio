@@ -83,8 +83,14 @@ export default function About() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center bg-secondary/50 border-b border-border">
-        <div className="container text-center">
+      <section className="relative h-96 flex items-center justify-center bg-secondary/50 border-b border-border" style={{
+        backgroundImage: 'url(/images/about-header-bg.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}>
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="container text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-cormorant font-bold mb-4">About Me</h1>
           <p className="text-lg text-foreground/70">
             Costume Designer & Fashion Design Student
@@ -123,7 +129,13 @@ export default function About() {
           </div>
 
           {/* Design Philosophy */}
-          <div className="mb-20 bg-secondary/30 p-8 rounded-lg border border-border">
+          <div className="mb-20 bg-secondary/30 p-8 rounded-lg border border-border relative" style={{
+            backgroundImage: 'url(/images/design-philosophy-bg.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}>
+            <div className="absolute inset-0 bg-black/50 rounded-lg" />
+            <div className="relative z-10">
             <h2 className="text-3xl font-cormorant font-bold mb-6">Design Philosophy</h2>
             <div className="w-12 h-1 bg-accent mb-6" />
 
@@ -141,10 +153,19 @@ export default function About() {
                 <strong>Collaborative:</strong> Costume design is inherently collaborative. I work closely with directors, performers, and production teams to realize a unified vision.
               </p>
             </div>
+            </div>
           </div>
 
           {/* Core Competencies */}
-          <div className="mb-20">
+          <div className="mb-20 relative" style={{
+            backgroundImage: 'url(/images/core-competencies-bg.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            padding: '2rem',
+            borderRadius: '0.5rem',
+          }}>
+            <div className="absolute inset-0 bg-black/50 rounded" />
+            <div className="relative z-10">
             <h2 className="text-4xl font-cormorant font-bold mb-6">Core Competencies</h2>
             <div className="w-12 h-1 bg-accent mb-8" />
 
@@ -157,6 +178,7 @@ export default function About() {
                   <p className="font-raleway font-semibold text-foreground">{skill}</p>
                 </div>
               ))}
+            </div>
             </div>
           </div>
 
@@ -184,11 +206,18 @@ export default function About() {
           </div>
 
           {/* Vision */}
-          <div className="mb-16 bg-accent/10 p-8 rounded-lg border border-accent/30">
+          <div className="mb-16 bg-accent/10 p-8 rounded-lg border border-accent/30 relative" style={{
+            backgroundImage: 'url(/images/vision-bg.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}>
+            <div className="absolute inset-0 bg-black/50 rounded-lg" />
+            <div className="relative z-10">
             <h2 className="text-3xl font-cormorant font-bold mb-4">Vision</h2>
             <p className="text-lg text-foreground/80 leading-relaxed">
               My goal is to continue working in film and television costume design, contributing to productions where wardrobe is integral to character, atmosphere, and storytelling. I seek opportunities to create costumes that elevate narrative and support performers in bringing complex characters to life.
             </p>
+            </div>
           </div>
 
           {/* CTA Section */}

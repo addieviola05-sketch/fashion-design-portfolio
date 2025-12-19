@@ -218,10 +218,8 @@ export default function Home() {
                 opportunity to explore the intersection of narrative, character, and wearable art.
               </p>
 
-              <Link href="/about">
-                <a className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-accent-foreground rounded-lg font-raleway font-semibold hover:opacity-90 transition-opacity">
-                  Read Full Bio <span>→</span>
-                </a>
+              <Link href="/about" className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-accent-foreground rounded-lg font-raleway font-semibold hover:opacity-90 transition-opacity">
+                Read Full Bio <span>→</span>
               </Link>
             </div>
           </div>
