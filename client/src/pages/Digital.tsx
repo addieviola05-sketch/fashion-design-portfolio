@@ -290,14 +290,23 @@ export default function Digital() {
       </section>
 
       {/* Design Process */}
-      <section className="py-24 bg-secondary/30 border-t border-border">
-        <div className="container max-w-3xl">
-          <h2 className="text-4xl font-cormorant font-bold mb-6 text-center">
+      <section className="relative py-24 border-t border-border overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(/images/design-process-bg.jpg)',
+          }}
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="container max-w-3xl relative z-10">
+          <h2 className="text-4xl font-cormorant font-bold mb-6 text-center text-white">
             Digital Design Process
           </h2>
           <div className="w-12 h-1 bg-accent mx-auto mb-12" />
 
-          <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
+          <div className="space-y-6 text-lg text-white/90 leading-relaxed">
             <p>
               My digital design process begins with extensive research and mood board creation,
               exploring historical references, color theory, and contemporary design trends. Using
