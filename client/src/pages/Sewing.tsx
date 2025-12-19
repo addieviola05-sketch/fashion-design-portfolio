@@ -1,42 +1,84 @@
+import { useState } from "react";
 import { Link } from "wouter";
 
 /**
- * Sewing Projects Page - Constructed Garments
- * Design Philosophy: Sophisticated Storytelling with Editorial Influence
- * Typography: Cormorant Garamond (headlines) + Raleway (body)
+ * Sewing Projects Page - Realized 3D Garments
+ * Showcases actual constructed pieces with detailed project narratives
  */
 
 export default function Sewing() {
+  const [selectedProject, setSelectedProject] = useState<number | null>(null);
+
   const projects = [
     {
       id: 1,
-      title: "Tailored Evening Gown",
+      title: "Vivienne Westwood Inspired Dress",
+      subtitle: "Edmund Dantes Quest for Revenge",
       year: "2024",
       description:
-        "A hand-constructed silk evening gown featuring intricate beadwork, custom tailoring, and couture finishing techniques. Each seam and detail was executed with precision.",
-      materials: ["Silk Charmeuse", "Hand-Beaded Embellishments", "Custom Lining"],
-      techniques: ["Hand Sewing", "Couture Finishing", "Beadwork", "Custom Tailoring"],
-      imageUrl: "/images/costume-design.jpg",
+        "A modern reinterpretation of Vivienne Westwood's iconic 1981 Pirate Collection, inspired by Alexandre Dumas's The Count of Monte Cristo. This piece features bold architectural silhouettes with dramatic puffed sleeves and structured tailoring, referencing Westwood's rebellious aesthetic and the narrative of vengeance and transformation. The striped collar detail and precise button placement echo the punk-meets-haute-couture philosophy of the original collection.",
+      materials: [
+        "Red Linen",
+        "Striped Cotton",
+        "Mother of Pearl Buttons",
+        "Custom Interfacing",
+      ],
+      techniques: [
+        "Structured Tailoring",
+        "Puffed Sleeve Construction",
+        "Off-Shoulder Neckline",
+        "Button Placement & Finishing",
+        "Precise Seaming",
+      ],
+      images: [
+        "/images/sewing-projects/IMG_7246.jpeg",
+        "/images/sewing-projects/IMG_7295.jpeg",
+      ],
+      inspiration:
+        "Vivienne Westwood's 1981 Pirate Collection & The Count of Monte Cristo narrative",
     },
     {
       id: 2,
-      title: "Structured Jacket Collection",
+      title: "Tartan Skirt with Cream Blouse",
       year: "2024",
       description:
-        "A series of tailored jackets exploring different construction methods, lapel styles, and fabric weights. Each piece demonstrates advanced pattern-making and garment construction skills.",
-      materials: ["Wool Suiting", "Linen Blends", "Cotton Twill"],
-      techniques: ["Pattern Making", "Interfacing", "Hand-Stitched Lapels", "Precision Tailoring"],
-      imageUrl: "/images/hero-fashion.jpg",
+        "A classically tailored ensemble combining a hand-constructed tartan skirt with structured pleating and a cream linen blouse. This piece demonstrates mastery of traditional tailoring techniques, including precise pattern matching on the tartan weave, professional hem finishing, and proper waistband construction. The combination showcases both technical precision and timeless design sensibility.",
+      materials: [
+        "Tartan Wool",
+        "Cream Linen",
+        "Custom Waistband",
+        "Professional Hem Tape",
+      ],
+      techniques: [
+        "Pattern Matching",
+        "Pleat Construction",
+        "Waistband Assembly",
+        "Hand Finishing",
+        "Precision Hemming",
+      ],
+      images: [
+        "/images/sewing-projects/IMG_4467.jpeg",
+        "/images/sewing-projects/IMG_4472.jpeg",
+        "/images/sewing-projects/IMG_4465.jpeg",
+        "/images/sewing-projects/IMG_4466.jpeg",
+      ],
+      inspiration: "Classic tailoring with contemporary styling",
     },
     {
       id: 3,
-      title: "Costume Armor & Accessories",
-      year: "2023",
+      title: "Plaid Cape with Button Detail",
+      year: "2024",
       description:
-        "Hand-crafted costume pieces including structured bodices, armor elements, and accessories. These pieces combine traditional tailoring with innovative construction methods.",
-      materials: ["Specialty Fabrics", "Leather", "Metal Hardware"],
-      techniques: ["Boning & Structuring", "Leatherworking", "Hardware Installation", "Armor Fabrication"],
-      imageUrl: "/images/design-process.jpg",
+        "A structured cape garment featuring plaid patterning and careful button placement. This piece demonstrates understanding of how to construct outerwear with proper drape and structural integrity. The button details show precision finishing work, and the overall construction reflects professional-level garment assembly.",
+      materials: ["Plaid Wool Blend", "Buttons", "Interfacing"],
+      techniques: [
+        "Cape Construction",
+        "Button Placement",
+        "Structured Drape",
+        "Finishing Details",
+      ],
+      images: ["/images/sewing-projects/IMG_4480.jpeg"],
+      inspiration: "Structured outerwear design",
     },
   ];
 
@@ -45,29 +87,40 @@ export default function Sewing() {
       {/* Navigation */}
       <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <nav className="container py-4 flex justify-between items-center">
-          <Link href="/">
-            <a className="hover:opacity-80 transition-opacity">
-              <img src="/images/logo-monogram.png" alt="Addison Moore" className="h-12 w-auto" />
-            </a>
+          <Link href="/" className="hover:opacity-80 transition-opacity">
+            <img
+              src="/images/logo-monogram.png"
+              alt="Addison Moore"
+              className="h-12 w-auto"
+            />
           </Link>
           <div className="flex gap-6 text-sm">
-            <Link href="/">
-              <a className="hover:text-accent transition-colors">Home</a>
+            <Link href="/" className="hover:text-accent transition-colors">
+              Home
             </Link>
-            <Link href="/about">
-              <a className="hover:text-accent transition-colors">About</a>
+            <Link href="/about" className="hover:text-accent transition-colors">
+              About
             </Link>
-            <Link href="/hand-drawn">
-              <a className="hover:text-accent transition-colors">Hand Drawn</a>
+            <Link
+              href="/hand-drawn"
+              className="hover:text-accent transition-colors"
+            >
+              Hand Drawn
             </Link>
-            <Link href="/sewing">
-              <a className="hover:text-accent transition-colors">Sewing</a>
+            <Link href="/sewing" className="hover:text-accent transition-colors">
+              Sewing
             </Link>
-            <Link href="/digital">
-              <a className="hover:text-accent transition-colors">Digital</a>
+            <Link
+              href="/digital"
+              className="hover:text-accent transition-colors"
+            >
+              Digital
             </Link>
-            <Link href="/artwork">
-              <a className="hover:text-accent transition-colors">Artwork</a>
+            <Link
+              href="/artwork"
+              className="hover:text-accent transition-colors"
+            >
+              Artwork
             </Link>
           </div>
         </nav>
@@ -80,35 +133,53 @@ export default function Sewing() {
             Sewing Projects
           </h1>
           <p className="text-lg text-foreground/70">
-            Constructed garments and tailoring expertise
+            Realized 3D garments and constructed pieces
           </p>
           <div className="w-12 h-1 bg-accent mx-auto mt-6" />
         </div>
       </section>
 
-      {/* Projects Grid */}
+      {/* Projects Section */}
       <section className="py-24">
-        <div className="container">
-          <div className="space-y-20">
+        <div className="container max-w-5xl">
+          <div className="space-y-32">
             {projects.map((project, index) => (
               <div
                 key={project.id}
-                className="grid md:grid-cols-2 gap-12 items-center"
+                className="grid md:grid-cols-2 gap-12 items-start"
                 style={{
                   animation: `fadeInUp 0.6s ease-out ${index * 0.2}s both`,
                 }}
               >
-                {/* Image */}
+                {/* Images */}
                 <div
-                  className={`relative overflow-hidden rounded-lg h-96 ${
+                  className={`space-y-4 ${
                     index % 2 === 1 ? "md:order-2" : ""
                   }`}
                 >
-                  <img
-                    src={project.imageUrl}
-                    alt={project.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  />
+                  <div className="relative overflow-hidden rounded-lg h-96 bg-secondary/30">
+                    <img
+                      src={project.images[0]}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  {project.images.length > 1 && (
+                    <div className="grid grid-cols-2 gap-4">
+                      {project.images.slice(1).map((img, idx) => (
+                        <div
+                          key={idx}
+                          className="relative overflow-hidden rounded-lg h-48 bg-secondary/30"
+                        >
+                          <img
+                            src={img}
+                            alt={`${project.title} detail ${idx + 1}`}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
 
                 {/* Content */}
@@ -119,12 +190,28 @@ export default function Sewing() {
                     </span>
                   </div>
 
-                  <h2 className="text-4xl font-cormorant font-bold mb-4">{project.title}</h2>
+                  <h2 className="text-4xl font-cormorant font-bold mb-2">
+                    {project.title}
+                  </h2>
+                  {project.subtitle && (
+                    <p className="text-lg text-accent font-raleway mb-4">
+                      {project.subtitle}
+                    </p>
+                  )}
                   <div className="w-12 h-1 bg-accent mb-6" />
 
                   <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
                     {project.description}
                   </p>
+
+                  {project.inspiration && (
+                    <div className="mb-6 p-4 bg-accent/10 border-l-2 border-accent rounded">
+                      <p className="text-sm font-raleway text-accent font-semibold mb-1">
+                        Inspiration
+                      </p>
+                      <p className="text-foreground/70">{project.inspiration}</p>
+                    </div>
+                  )}
 
                   {/* Materials */}
                   <div className="mb-6">
@@ -159,11 +246,6 @@ export default function Sewing() {
                       ))}
                     </div>
                   </div>
-
-                  {/* View Details Button */}
-                  <button className="inline-flex items-center gap-2 px-6 py-2 border border-accent text-accent rounded-lg font-raleway font-semibold hover:bg-accent/10 transition-colors">
-                    View Details <span>→</span>
-                  </button>
                 </div>
               </div>
             ))}
@@ -175,78 +257,32 @@ export default function Sewing() {
       <section className="py-24 bg-secondary/30 border-t border-border">
         <div className="container max-w-3xl">
           <h2 className="text-4xl font-cormorant font-bold mb-6 text-center">
-            Craftsmanship & Technique
+            Craftsmanship & Construction
           </h2>
           <div className="w-12 h-1 bg-accent mx-auto mb-12" />
 
           <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
             <p>
-              Every garment I construct is a testament to meticulous craftsmanship and technical
-              expertise. I combine traditional tailoring techniques with innovative construction
-              methods to create pieces that are both beautiful and functional.
+              Every garment I construct represents a commitment to precision,
+              technical excellence, and thoughtful design. My sewing practice
+              encompasses traditional tailoring techniques combined with
+              contemporary design sensibilities.
             </p>
 
             <p>
-              My sewing practice encompasses everything from basic seam construction to advanced
-              couture techniques. I hand-finish details, create custom patterns, and work with
-              specialty materials including leather, beads, and technical fabrics.
+              From pattern matching on plaid fabrics to constructing structured
+              silhouettes with proper interfacing and support, each piece
+              demonstrates mastery of fundamental garment construction. I focus
+              on the details that distinguish couture-level work: hand-finished
+              hems, precise seam placement, and professional button attachment.
             </p>
 
             <p>
-              Each project is approached with the understanding that construction quality directly
-              impacts the final aesthetic and longevity of the garment. Precision, attention to
-              detail, and respect for materials are at the heart of my work.
+              My approach to sewing is informed by my background in costume
+              design and fashion studies. I understand how garments function on
+              the body, how fabrics behave, and how construction choices impact
+              the final aesthetic and wearability of a piece.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Skills Highlight */}
-      <section className="py-24">
-        <div className="container">
-          <h2 className="text-4xl font-cormorant font-bold mb-12 text-center">
-            Core Sewing Skills
-          </h2>
-          <div className="w-12 h-1 bg-accent mx-auto mb-12" />
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Pattern Making",
-                description: "Creating custom patterns from sketches and measurements.",
-              },
-              {
-                title: "Hand Sewing",
-                description: "Precision hand-stitching for finishing and detail work.",
-              },
-              {
-                title: "Tailoring",
-                description: "Professional tailoring and garment fitting expertise.",
-              },
-              {
-                title: "Couture Finishing",
-                description: "High-end finishing techniques and embellishment work.",
-              },
-              {
-                title: "Fabric Handling",
-                description: "Expertise with various fabric types and their properties.",
-              },
-              {
-                title: "Structural Design",
-                description: "Creating structured garments with boning and interfacing.",
-              },
-            ].map((skill, index) => (
-              <div
-                key={skill.title}
-                className="p-6 bg-secondary/50 rounded-lg border border-border hover:border-accent transition-colors"
-                style={{
-                  animation: `fadeInUp 0.5s ease-out ${index * 0.05}s both`,
-                }}
-              >
-                <h3 className="text-xl font-cormorant font-bold mb-3">{skill.title}</h3>
-                <p className="text-foreground/70">{skill.description}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -254,13 +290,17 @@ export default function Sewing() {
       {/* CTA Section */}
       <section className="py-24 bg-secondary/30 border-t border-border">
         <div className="container text-center">
-          <h2 className="text-4xl font-cormorant font-bold mb-6">Commission Custom Work</h2>
+          <h2 className="text-4xl font-cormorant font-bold mb-6">
+            Commission Custom Work
+          </h2>
           <div className="w-12 h-1 bg-accent mx-auto mb-8" />
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto mb-8">
-            I accept commissions for custom garments, alterations, and bespoke costume pieces.
+            I accept commissions for custom garments, alterations, and bespoke
+            pieces. Whether you're looking for a specific design or need expert
+            tailoring, I'd love to discuss your project.
           </p>
           <a
-            href="mailto:contact@example.com"
+            href="mailto:addieviola05@gmail.com"
             className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-accent-foreground rounded-lg font-raleway font-semibold hover:opacity-90 transition-opacity"
           >
             Request a Commission
