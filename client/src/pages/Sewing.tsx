@@ -211,6 +211,36 @@ export default function Sewing() {
       ],
       inspiration: "Traditional dirndl with botanical elegance and romantic eyelet details",
     },
+    {
+      id: 8,
+      title: "Floral Twill Cropped Shacket with Eyelet Peter Pan Collar",
+      year: "2024",
+      description:
+        "A charming cropped shacket featuring a vibrant floral twill print with an elegant eyelet Peter Pan collar. This piece demonstrates expertise in working with structured fabrics and creating distinctive collar details that elevate a casual garment. The shacket showcases precise tailoring with a cropped silhouette, while the eyelet Peter Pan collar adds a whimsical, romantic touch. The botanical print features sunflowers, daisies, and various wildflowers in jewel tones against a dark background, creating visual interest and depth. The contrast between the structured twill body and the delicate eyelet collar creates a sophisticated balance between playful and refined design elements. This piece exemplifies the ability to combine unexpected design elements—casual shacket construction with formal collar detailing—to create a unique, wearable garment.",
+      materials: [
+        "Floral Twill Fabric",
+        "Eyelet Cotton",
+        "Interfacing",
+        "Buttons",
+        "Lining",
+      ],
+      techniques: [
+        "Shacket Construction",
+        "Cropped Silhouette Tailoring",
+        "Peter Pan Collar Design",
+        "Eyelet Collar Assembly",
+        "Button Placement",
+        "Seam Finishing",
+        "Fabric Pattern Matching",
+      ],
+      images: [
+        "/images/sewing-projects/floral-shacket-main.jpeg",
+        "/images/sewing-projects/floral-shacket-back.jpeg",
+        "/images/sewing-projects/floral-shacket-collar.jpeg",
+        "/images/sewing-projects/floral-shacket-fabric.jpeg",
+      ],
+      inspiration: "Casual shacket construction with romantic eyelet collar details and botanical garden aesthetics",
+    },
   ];
 
   return (
