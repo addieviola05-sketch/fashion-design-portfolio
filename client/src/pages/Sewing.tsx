@@ -460,8 +460,14 @@ export default function Sewing() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-secondary/30 border-t border-border">
-        <div className="container text-center">
+      <section className="relative py-24 bg-secondary/30 border-t border-border" style={{
+        backgroundImage: 'url(/images/backgrounds/commission-sewing-machine.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}>
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="container text-center relative z-10">
           <h2 className="text-4xl font-cormorant font-bold mb-6">
             Commission Custom Work
           </h2>
