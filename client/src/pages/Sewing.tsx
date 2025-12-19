@@ -60,6 +60,7 @@ export default function Sewing() {
         "Precision Hemming",
       ],
       images: [
+        "/images/sewing-projects/IMG_4460.jpeg",
         "/images/sewing-projects/IMG_4467.jpeg",
         "/images/sewing-projects/IMG_4472.jpeg",
         "/images/sewing-projects/IMG_4465.jpeg",
