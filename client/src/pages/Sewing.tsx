@@ -31,10 +31,10 @@ export default function Sewing() {
         "Precise Seaming",
       ],
       images: [
-        "/images/sewing-projects/IMG_7336.jpeg",
-        "/images/sewing-projects/IMG_7335.jpeg",
-        "/images/sewing-projects/IMG_7334.jpeg",
-        "/images/sewing-projects/IMG_7333.jpeg",
+        "/images/sewing-projects/IMG_4455.jpeg",
+        "/images/sewing-projects/IMG_4427.jpeg",
+        "/images/sewing-projects/IMG_4446.jpeg",
+        "/images/sewing-projects/IMG_4439.jpeg",
       ],
       inspiration:
         "Vivienne Westwood's 1981 Pirate Collection & The Count of Monte Cristo narrative",
@@ -68,10 +68,65 @@ export default function Sewing() {
     },
     {
       id: 3,
+      title: "Blue Evening Gown",
+      year: "2024",
+      description:
+        "An elegant evening gown in rich sapphire blue with a gathered skirt and fitted bodice. This piece demonstrates mastery of draping and construction of flowing silhouettes. The gown features a scoop neckline, sleeveless design, and a full skirt with subtle beading details that catch the light. The construction shows precise waistband assembly and professional hem finishing for a polished, wearable garment.",
+      materials: [
+        "Sapphire Blue Taffeta",
+        "Beading & Embellishments",
+        "Custom Waistband",
+        "Lining",
+      ],
+      techniques: [
+        "Bodice Construction",
+        "Gathered Skirt Assembly",
+        "Beading & Embellishment",
+        "Neckline Finishing",
+        "Professional Hemming",
+      ],
+      images: [
+        "/images/sewing-projects/IMG_4518.jpeg",
+        "/images/sewing-projects/IMG_4522.jpeg",
+        "/images/sewing-projects/IMG_4523.jpeg",
+        "/images/sewing-projects/IMG_4526.jpeg",
+      ],
+      inspiration: "Formal evening wear with elegant draping",
+    },
+    {
+      id: 4,
+      title: "Wedding Dress",
+      year: "2024",
+      description:
+        "A stunning bridal gown featuring a fitted bodice with a gathered skirt and elegant train. This piece showcases advanced garment construction techniques including precise bodice fitting, professional seaming, and careful hem finishing. The dress features a scoop neckline and sleeveless design, with the focus on clean lines and impeccable tailoring. The construction demonstrates the technical skill required for formal bridal wear.",
+      materials: [
+        "White Silk Taffeta",
+        "Lining",
+        "Custom Waistband",
+        "Professional Hem Tape",
+      ],
+      techniques: [
+        "Fitted Bodice Construction",
+        "Gathered Skirt Assembly",
+        "Scoop Neckline Finishing",
+        "Train Construction",
+        "Professional Hemming",
+        "Seam Finishing",
+      ],
+      images: [
+        "/images/sewing-projects/IMG_4531.jpeg",
+        "/images/sewing-projects/IMG_4532.jpeg",
+        "/images/sewing-projects/IMG_4533.jpeg",
+        "/images/sewing-projects/IMG_4534.jpeg",
+      ],
+      inspiration: "Formal bridal wear with elegant simplicity",
+    },
+    {
+      id: 5,
       title: "Plaid Cape with Button Detail",
       year: "2024",
       description:
-        "A structured cape garment featuring plaid patterning and careful button placement. This piece demonstrates understanding of how to construct outerwear with proper drape and structural integrity. The button details show precision finishing work, and the overall construction reflects professional-level garment assembly.",
+        "A structured cape garment featuring plaid patterning and careful button placement. This piece demonstrates understanding of how to construct outerwear with proper drape and structural integrity. The button details show precision finishing work, and the overall construction reflects professional-level garment assembly. The cape silhouette showcases dramatic tailoring and attention to detail.",
       materials: ["Plaid Wool Blend", "Buttons", "Interfacing"],
       techniques: [
         "Cape Construction",
@@ -81,6 +136,28 @@ export default function Sewing() {
       ],
       images: ["/images/sewing-projects/IMG_4480.jpeg"],
       inspiration: "Structured outerwear design",
+    },
+    {
+      id: 6,
+      title: "Pink Embellished Dress",
+      year: "2024",
+      description:
+        "A romantic dress in soft pink velvet featuring scattered beaded embellishments and puffed sleeves. This piece showcases the ability to work with delicate fabrics and add intricate detail work. The construction includes careful placement of beads and sequins, precise sleeve setting, and professional finishing. The gathered skirt and fitted bodice demonstrate control over multiple construction techniques.",
+      materials: [
+        "Pink Velvet",
+        "Beads & Sequins",
+        "Custom Interfacing",
+        "Lining",
+      ],
+      techniques: [
+        "Puffed Sleeve Construction",
+        "Beading & Embellishment",
+        "Gathered Skirt Assembly",
+        "Bodice Fitting",
+        "Professional Finishing",
+      ],
+      images: ["/images/sewing-projects/IMG_4517.jpeg"],
+      inspiration: "Romantic embellished evening wear",
     },
   ];
 
