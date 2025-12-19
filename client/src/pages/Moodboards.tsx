@@ -1,39 +1,50 @@
+import { useState } from "react";
 import { Link } from "wouter";
+import { X } from "lucide-react";
 
 /**
- * Moodboards Page - Design Inspiration and Aesthetic Collections
- * Design Philosophy: Sophisticated Storytelling with Editorial Influence
- * Typography: Cormorant Garamond (headlines) + Raleway (body)
+ * Moodboards Page - Design Inspiration & Visual References
+ * Showcases mood boards and design inspiration for collections
  */
 
 export default function Moodboards() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   const moodboards = [
     {
       id: 1,
-      title: "The Secret Garden",
-      year: "2025",
-      description:
-        "Inspired by Frances Hodgson Burnett's classic novel, this moodboard explores lush florals, romantic botanicals, and the mystery of hidden gardens. Rich jewel tones, delicate florals, and vintage botanical illustrations create an enchanted aesthetic.",
-      colors: ["#2D5016", "#8B7355", "#D4AF37", "#E8D5C4", "#4A7C59"],
-      imageUrl: "/images/design-process.jpg",
+      title: "Mood Board 1",
+      image: "/images/moodboards/Screenshot 2025-12-19 at 2.34.35 AM.png",
     },
     {
       id: 2,
-      title: "Don't Lose Your Head",
-      year: "2025",
-      description:
-        "A Tudor-inspired elevated grunge collection blending historical opulence with modern edge. Dark moody tones, ornate details, and rebellious silhouettes create a collection that challenges conventional beauty standards.",
-      colors: ["#1a1a1a", "#8B0000", "#D4AF37", "#4A4A4A", "#2F4F4F"],
-      imageUrl: "/images/costume-design.jpg",
+      title: "Mood Board 2",
+      image: "/images/moodboards/Screenshot 2025-12-19 at 2.34.50 AM.png",
     },
     {
       id: 3,
-      title: "Autumn Whispers",
-      year: "2024",
-      description:
-        "Warm earth tones, cozy textures, and the melancholy beauty of fall. This moodboard captures the essence of transitional seasons with burnt oranges, deep browns, and soft neutrals.",
-      colors: ["#8B4513", "#D2691E", "#CD853F", "#DEB887", "#F5DEB3"],
-      imageUrl: "/images/hero-fashion.jpg",
+      title: "Mood Board 3",
+      image: "/images/moodboards/Screenshot 2025-12-19 at 2.35.07 AM.png",
+    },
+    {
+      id: 4,
+      title: "Mood Board 4",
+      image: "/images/moodboards/Screenshot 2025-12-19 at 2.35.28 AM.png",
+    },
+    {
+      id: 5,
+      title: "Mood Board 5",
+      image: "/images/moodboards/Screenshot 2025-12-19 at 2.35.54 AM.png",
+    },
+    {
+      id: 6,
+      title: "Mood Board 6",
+      image: "/images/moodboards/Screenshot 2025-12-19 at 2.36.32 AM.png",
+    },
+    {
+      id: 7,
+      title: "Mood Board 7",
+      image: "/images/moodboards/Screenshot 2025-12-19 at 2.38.12 AM.png",
     },
   ];
 
@@ -48,163 +59,79 @@ export default function Moodboards() {
             </a>
           </Link>
           <div className="flex gap-6 text-sm">
-            <Link href="/">
-              <a className="hover:text-accent transition-colors">Home</a>
-            </Link>
-            <Link href="/about">
-              <a className="hover:text-accent transition-colors">About</a>
-            </Link>
-            <Link href="/hand-drawn">
-              <a className="hover:text-accent transition-colors">Hand Drawn</a>
-            </Link>
-            <Link href="/sewing">
-              <a className="hover:text-accent transition-colors">Sewing</a>
-            </Link>
-            <Link href="/digital">
-              <a className="hover:text-accent transition-colors">Digital</a>
-            </Link>
-            <Link href="/moodboards">
-              <a className="hover:text-accent transition-colors">Moodboards</a>
-            </Link>
-            <Link href="/artwork">
-              <a className="hover:text-accent transition-colors">Artwork</a>
-            </Link>
+            <a href="/" className="hover:text-accent transition-colors">Home</a>
+            <a href="/about" className="hover:text-accent transition-colors">About</a>
+            <a href="/hand-drawn" className="hover:text-accent transition-colors">Hand Drawn</a>
+            <a href="/sewing" className="hover:text-accent transition-colors">Sewing</a>
+            <a href="/digital" className="hover:text-accent transition-colors">Digital</a>
+            <a href="/moodboards" className="hover:text-accent transition-colors">Moodboards</a>
+            <a href="/artwork" className="hover:text-accent transition-colors">Artwork</a>
+            <a href="#contact" className="hover:text-accent transition-colors">Contact</a>
           </div>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center border-b border-border overflow-hidden">
-        {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: 'linear-gradient(135deg, #2D5016 0%, #8B7355 50%, #D4AF37 100%)',
-          }}
-        />
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/40" />
-        
-        {/* Content */}
-        <div className="container text-center relative z-10">
-          <h1 className="text-5xl md:text-6xl font-cormorant font-bold mb-4 text-white">
-            Moodboards
-          </h1>
-          <p className="text-lg text-white/80">
-            Design inspiration and aesthetic collections
-          </p>
+      <section className="relative h-96 flex items-center justify-center bg-secondary/50 border-b border-border">
+        <div className="container text-center">
+          <h1 className="text-5xl md:text-6xl font-cormorant font-bold mb-4">Mood Boards</h1>
+          <p className="text-lg text-accent font-semibold mb-2">Design Inspiration & Visual References</p>
+          <p className="text-foreground/70">Exploring color palettes, textures, and conceptual themes</p>
           <div className="w-12 h-1 bg-accent mx-auto mt-6" />
         </div>
       </section>
 
-      {/* Moodboards Grid */}
+      {/* Moodboards Gallery */}
       <section className="py-24">
         <div className="container">
-          <div className="space-y-32">
-            {moodboards.map((moodboard, index) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {moodboards.map((board) => (
               <div
-                key={moodboard.id}
-                className="grid md:grid-cols-2 gap-12 items-center"
-                style={{
-                  animation: `fadeInUp 0.6s ease-out ${index * 0.2}s both`,
-                }}
+                key={board.id}
+                className="group cursor-pointer"
+                onClick={() => setSelectedImage(board.image)}
               >
-                {/* Color Palette */}
-                <div
-                  className={`space-y-6 ${
-                    index % 2 === 1 ? "md:order-2" : ""
-                  }`}
-                >
-                  <div>
-                    <span className="text-accent font-raleway text-sm font-semibold">
-                      {moodboard.year}
-                    </span>
-                    <h2 className="text-4xl font-cormorant font-bold mb-4 mt-2">{moodboard.title}</h2>
-                    <div className="w-12 h-1 bg-accent mb-6" />
-                    <p className="text-lg text-foreground/80 leading-relaxed">
-                      {moodboard.description}
-                    </p>
-                  </div>
-
-                  {/* Color Swatches */}
-                  <div>
-                    <h3 className="text-sm font-raleway font-semibold text-accent mb-4 uppercase tracking-wide">
-                      Color Palette
-                    </h3>
-                    <div className="grid grid-cols-5 gap-3">
-                      {moodboard.colors.map((color, idx) => (
-                        <div key={idx} className="flex flex-col items-center">
-                          <div
-                            className="w-full aspect-square rounded-lg border border-border shadow-sm"
-                            style={{ backgroundColor: color }}
-                          />
-                          <span className="text-xs text-foreground/60 mt-2 font-mono">{color}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
-                {/* Image */}
-                <div
-                  className={`relative overflow-hidden rounded-lg h-96 ${
-                    index % 2 === 1 ? "md:order-1" : ""
-                  }`}
-                >
+                <div className="relative overflow-hidden rounded-lg h-96 bg-secondary/50 border border-border mb-4">
                   <img
-                    src={moodboard.imageUrl}
-                    alt={moodboard.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    src={board.image}
+                    alt={board.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
                 </div>
+                <h3 className="text-lg font-cormorant font-bold">{board.title}</h3>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Design Philosophy */}
-      <section className="py-24 bg-secondary/30 border-t border-border">
-        <div className="container max-w-3xl">
-          <h2 className="text-4xl font-cormorant font-bold mb-6 text-center">
-            Design Philosophy
-          </h2>
-          <div className="w-12 h-1 bg-accent mx-auto mb-12" />
-
-          <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
-            <p>
-              Moodboards are the foundation of my design process. They capture the essence, emotion, and aesthetic direction of each collection before a single sketch is drawn.
-            </p>
-
-            <p>
-              Through careful curation of colors, textures, imagery, and inspiration, moodboards guide every design decision—from fabric selection to silhouette development. They serve as visual narratives that communicate the story and spirit of each collection.
-            </p>
-
-            <p>
-              These collections represent my design philosophy: intentional, thoughtful, and deeply rooted in storytelling. Each moodboard is a journey into a specific aesthetic world, inviting viewers to explore the themes and inspirations that drive my work.
-            </p>
+      {/* Lightbox Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
+            <img
+              src={selectedImage}
+              alt="Mood board"
+              className="w-full h-auto rounded-lg"
+            />
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 p-2 bg-background/80 hover:bg-background text-foreground rounded-full transition-colors"
+            >
+              <X className="w-6 h-6" />
+            </button>
           </div>
         </div>
-      </section>
+      )}
 
       {/* Footer */}
       <footer className="py-8 bg-secondary/50 border-t border-border text-center text-foreground/60 text-sm">
         <p>© 2025 Addison Moore. All rights reserved.</p>
       </footer>
-
-      {/* Animations */}
-      <style>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
     </div>
   );
 }
