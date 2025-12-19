@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import CollectionCarousel from "@/components/CollectionCarousel";
 
 /**
  * Digital Projects Page - Fashion Design Collections
@@ -7,6 +8,15 @@ import { Link } from "wouter";
  */
 
 export default function Digital() {
+  // Generate image paths for carousels
+  const secretGardenImages = Array.from({ length: 20 }, (_, i) =>
+    `/collections/sg_page-${i}.png`
+  );
+
+  const dlyheImages = Array.from({ length: 24 }, (_, i) =>
+    `/collections/dlyh_page-${i}.png`
+  );
+
   const collections = [
     {
       id: 1,
@@ -43,6 +53,7 @@ export default function Digital() {
       ],
       tools: ["Adobe Illustrator", "Digital Design", "Pattern Design", "Color Theory", "Technical Specifications"],
       pdfUrl: "/Moore,AddisonFinalProject.pdf",
+      carouselImages: secretGardenImages,
     },
     {
       id: 2,
@@ -77,6 +88,7 @@ export default function Digital() {
       ],
       tools: ["Adobe Illustrator", "Digital Design", "Silhouette Development", "Color Theory", "Historical Research"],
       pdfUrl: "/Moore,AddisonDLYHFinal.ai",
+      carouselImages: dlyheImages,
     },
   ];
 
@@ -150,11 +162,21 @@ export default function Digital() {
                   <p className="text-2xl text-accent font-raleway mb-4">
                     {collection.subtitle}
                   </p>
-                  <div className="w-12 h-1 bg-accent mb-6" />
-                  <p className="text-lg text-foreground/80 leading-relaxed max-w-3xl">
-                    {collection.description}
-                  </p>
+                  <div className="w-12 h-1 bg-accent mb-8" />
                 </div>
+
+                {/* Carousel */}
+                <div className="mb-12">
+                  <CollectionCarousel
+                    images={collection.carouselImages}
+                    title={collection.title}
+                  />
+                </div>
+
+                {/* Description */}
+                <p className="text-lg text-foreground/80 leading-relaxed max-w-3xl mb-12">
+                  {collection.description}
+                </p>
 
                 {/* Inspiration */}
                 <div className="mb-12 p-6 bg-accent/10 border-l-2 border-accent rounded">
