@@ -56,3 +56,7 @@
 ## Deployment
 - [ ] Save checkpoint with all changes
 - [ ] Ready for publication
+
+## Cleanup Before Publishing
+- [x] Remove "Full Collection Presentation" sections with empty slideshows
+- [x] Remove "Download Full Collection PDF" sections

@@ -142,34 +142,6 @@ export default function SorrowOfAngels() {
         </div>
       </section>
 
-      {/* PDF Viewer Section */}
-      <section className="py-24 bg-secondary/20 border-t border-border">
-        <div className="container max-w-5xl">
-          <h2 className="text-4xl font-cormorant font-bold mb-4 text-center">Full Collection Presentation</h2>
-          <div className="w-12 h-1 bg-accent mx-auto mb-12" />
-          
-          <div className="bg-secondary/50 rounded-lg border border-border overflow-hidden mb-8">
-            <iframe
-              src="https://docs.google.com/gview?url=https%3A%2F%2Ffiles.manuscdn.com%2Fuser_upload_by_module%2Fsession_file%2F310519663254082411%2FicYgOuFrxkFRRPGu.pdf&embedded=true"
-              width="100%"
-              height="800px"
-              style={{ border: "none" }}
-              title="The Sorrow of Angels Collection"
-            />
-          </div>
-          
-          <div className="text-center">
-            <a
-              href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663254082411/icYgOuFrxkFRRPGu.pdf"
-              download
-              className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity"
-            >
-              Download Full Collection PDF
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* Full Gallery */}
       <section className="py-24 bg-secondary/20 border-t border-border">
         <div className="container">
