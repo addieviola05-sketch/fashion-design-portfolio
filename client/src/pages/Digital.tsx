@@ -20,6 +20,41 @@ export default function Digital() {
   const collections = [
     {
       id: 1,
+      title: "Don't Lose Your Head",
+      subtitle: "Fall Tudor-Inspired Elevated Grunge Collection by Viola & Spindle",
+      year: "2025",
+      season: "Fall 2025",
+      inspiration: "Tudor History & Elevated Grunge Aesthetic",
+      description:
+        "An audacious and dramatic fall collection that merges Tudor historical silhouettes with contemporary elevated grunge sensibilities. This collection subverts expectations by combining opulent historical references with modern edge, creating pieces that are both refined and rebellious. Rich jewel tones, dramatic silhouettes, and intricate details create a collection that celebrates historical fashion while pushing it into bold new territory.",
+      highlights: [
+        "Tudor-inspired silhouettes with modern proportions",
+        "Rich jewel-tone color palette with dramatic contrasts",
+        "Elevated grunge aesthetic with refined tailoring",
+        "Statement collars and dramatic sleeve details",
+        "Intricate pattern work and textile innovation",
+        "Subversive historical references with contemporary edge",
+      ],
+      keyPieces: [
+        "Dramatic statement coats with contrast collars",
+        "Structured bodices with modern proportions",
+        "Wide-leg trousers in rich jewel tones",
+        "Layered silhouettes combining multiple textures",
+        "Elevated grunge styling with historical references",
+      ],
+      colorPalette: [
+        { name: "Deep Burgundy", description: "Wine and burgundy tones", colors: ["#5c1a1a", "#8b3a3a", "#c97a7a"] },
+        { name: "Forest Green", description: "Rich forest greens", colors: ["#1a3a2a", "#2d5a3d", "#4a7a5a"] },
+        { name: "Charcoal", description: "Charcoal and black accents", colors: ["#2a2a2a", "#4a4a4a", "#6a6a6a"] },
+        { name: "Cream", description: "Cream and ivory contrast details", colors: ["#f5f1e8", "#e8dcc8", "#d4c4a8"] },
+        { name: "Jewel Tones", description: "Jewel-tone blues and purples", colors: ["#2c3e7a", "#4a3a7a", "#6a4a8a"] },
+      ],
+      tools: ["Adobe Illustrator", "Digital Design", "Silhouette Development", "Color Theory", "Historical Research"],
+      pdfUrl: "/Moore,AddisonDLYHFinal.ai",
+      carouselImages: dlyheImages,
+    },
+    {
+      id: 2,
       title: "The Secret Garden",
       subtitle: "Modern Fall Cozy Rainwear Collection by Viola & Spindle",
       year: "2026",
@@ -54,41 +89,6 @@ export default function Digital() {
       tools: ["Adobe Illustrator", "Digital Design", "Pattern Design", "Color Theory", "Technical Specifications"],
       pdfUrl: "/Moore,AddisonFinalProject.pdf",
       carouselImages: secretGardenImages,
-    },
-    {
-      id: 2,
-      title: "Don't Lose Your Head",
-      subtitle: "Fall Tudor-Inspired Elevated Grunge Collection by Viola & Spindle",
-      year: "2025",
-      season: "Fall 2025",
-      inspiration: "Tudor History & Elevated Grunge Aesthetic",
-      description:
-        "An audacious and dramatic fall collection that merges Tudor historical silhouettes with contemporary elevated grunge sensibilities. This collection subverts expectations by combining opulent historical references with modern edge, creating pieces that are both refined and rebellious. Rich jewel tones, dramatic silhouettes, and intricate details create a collection that celebrates historical fashion while pushing it into bold new territory.",
-      highlights: [
-        "Tudor-inspired silhouettes with modern proportions",
-        "Rich jewel-tone color palette with dramatic contrasts",
-        "Elevated grunge aesthetic with refined tailoring",
-        "Statement collars and dramatic sleeve details",
-        "Intricate pattern work and textile innovation",
-        "Subversive historical references with contemporary edge",
-      ],
-      keyPieces: [
-        "Dramatic statement coats with contrast collars",
-        "Structured bodices with modern proportions",
-        "Wide-leg trousers in rich jewel tones",
-        "Layered silhouettes combining multiple textures",
-        "Elevated grunge styling with historical references",
-      ],
-      colorPalette: [
-        { name: "Deep Burgundy", description: "Wine and burgundy tones", colors: ["#5c1a1a", "#8b3a3a", "#c97a7a"] },
-        { name: "Forest Green", description: "Rich forest greens", colors: ["#1a3a2a", "#2d5a3d", "#4a7a5a"] },
-        { name: "Charcoal", description: "Charcoal and black accents", colors: ["#2a2a2a", "#4a4a4a", "#6a6a6a"] },
-        { name: "Cream", description: "Cream and ivory contrast details", colors: ["#f5f1e8", "#e8dcc8", "#d4c4a8"] },
-        { name: "Jewel Tones", description: "Jewel-tone blues and purples", colors: ["#2c3e7a", "#4a3a7a", "#6a4a8a"] },
-      ],
-      tools: ["Adobe Illustrator", "Digital Design", "Silhouette Development", "Color Theory", "Historical Research"],
-      pdfUrl: "/Moore,AddisonDLYHFinal.ai",
-      carouselImages: dlyheImages,
     },
   ];
 
