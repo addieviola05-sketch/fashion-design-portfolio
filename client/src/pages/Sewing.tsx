@@ -307,14 +307,19 @@ export default function Sewing() {
             {projects.map((project, index) => (
               <div
                 key={project.id}
-                className="grid md:grid-cols-2 gap-12 items-start"
+                className="grid md:grid-cols-2 gap-12 items-start relative p-8 rounded-lg"
                 style={{
                   animation: `fadeInUp 0.6s ease-out ${index * 0.2}s both`,
+                  backgroundImage: project.id === 1 ? 'url(/images/backgrounds/corsaire-ocean.jpeg)' : project.id === 7 ? 'url(/images/backgrounds/dirndl-forest.jpg)' : project.id === 6 ? 'url(/images/backgrounds/regency-palace.jpg)' : project.id === 3 ? 'url(/images/backgrounds/evening-gown-corridor.jpg)' : 'none',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundAttachment: 'fixed',
                 }}
               >
+                {[1, 7, 6, 3].includes(project.id) && <div className="absolute inset-0 bg-black/60 rounded-lg" />}
                 {/* Images */}
                 <div
-                  className={`space-y-4 ${
+                  className={`space-y-4 relative z-10 ${
                     index % 2 === 1 ? "md:order-2" : ""
                   }`}
                 >
@@ -344,7 +349,7 @@ export default function Sewing() {
                 </div>
 
                 {/* Content */}
-                <div className={index % 2 === 1 ? "md:order-1" : ""}>
+                <div className={`relative z-10 ${index % 2 === 1 ? "md:order-1" : ""}`}>
                   <div className="mb-4">
                     <span className="text-accent font-raleway text-sm font-semibold">
                       {project.year}
