@@ -58,6 +58,9 @@ export default function Artwork() {
               <a className="hover:text-accent transition-colors">Sewing</a>
             </Link>
             <Link href="/digital">
+            <Link href="/moodboards">
+              <a className="hover:text-accent transition-colors">Moodboards</a>
+            </Link>
               <a className="hover:text-accent transition-colors">Digital</a>
             </Link>
             <Link href="/artwork">

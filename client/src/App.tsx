@@ -16,6 +16,7 @@ import BeyondPittock from "./pages/BeyondPittock";
 import OppositeDesigner from "./pages/OppositeDesigner";
 import Sewing from "./pages/Sewing";
 import Digital from "./pages/Digital";
+import Moodboards from "./pages/Moodboards";
 import Artwork from "./pages/Artwork";
 import Resume from "./pages/Resume";
 
@@ -35,6 +36,7 @@ function Router() {
       <Route path={"/opposite-designer"} component={OppositeDesigner} />
       <Route path={"/sewing"} component={Sewing} />
       <Route path={"/digital"} component={Digital} />
+      <Route path={"/moodboards"} component={Moodboards} />
       <Route path={"/artwork"} component={Artwork} />
       <Route path={"/resume"} component={Resume} />
       <Route path={"/404"} component={NotFound} />
