@@ -14,37 +14,37 @@ export default function Moodboards() {
     {
       id: 1,
       title: "Mood Board 1",
-      image: "/images/moodboards/Screenshot 2025-12-19 at 2.34.35 AM.png",
+      image: "/images/moodboards/Screenshot_2025-12-19_at_2.34.35 AM.png",
     },
     {
       id: 2,
       title: "Mood Board 2",
-      image: "/images/moodboards/Screenshot 2025-12-19 at 2.34.50 AM.png",
+      image: "/images/moodboards/Screenshot_2025-12-19_at_2.34.50 AM.png",
     },
     {
       id: 3,
       title: "Mood Board 3",
-      image: "/images/moodboards/Screenshot 2025-12-19 at 2.35.07 AM.png",
+      image: "/images/moodboards/Screenshot_2025-12-19_at_2.35.07 AM.png",
     },
     {
       id: 4,
       title: "Mood Board 4",
-      image: "/images/moodboards/Screenshot 2025-12-19 at 2.35.28 AM.png",
+      image: "/images/moodboards/Screenshot_2025-12-19_at_2.35.28 AM.png",
     },
     {
       id: 5,
       title: "Mood Board 5",
-      image: "/images/moodboards/Screenshot 2025-12-19 at 2.35.54 AM.png",
+      image: "/images/moodboards/Screenshot_2025-12-19_at_2.35.54 AM.png",
     },
     {
       id: 6,
       title: "Mood Board 6",
-      image: "/images/moodboards/Screenshot 2025-12-19 at 2.36.32 AM.png",
+      image: "/images/moodboards/Screenshot_2025-12-19_at_2.36.32 AM.png",
     },
     {
       id: 7,
       title: "Mood Board 7",
-      image: "/images/moodboards/Screenshot 2025-12-19 at 2.38.12 AM.png",
+      image: "/images/moodboards/Screenshot_2025-12-19_at_2.38.12 AM.png",
     },
   ];
 
@@ -84,22 +84,22 @@ export default function Moodboards() {
       {/* Moodboards Gallery */}
       <section className="py-24">
         <div className="container">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="space-y-12">
             {moodboards.map((board) => (
               <div
                 key={board.id}
                 className="group cursor-pointer"
                 onClick={() => setSelectedImage(board.image)}
               >
-                <div className="relative overflow-hidden rounded-lg h-96 bg-secondary/50 border border-border mb-4">
+                <div className="relative overflow-hidden rounded-lg bg-secondary/50 border border-border">
                   <img
                     src={board.image}
                     alt={board.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
                 </div>
-                <h3 className="text-lg font-cormorant font-bold">{board.title}</h3>
+                <h3 className="text-lg font-cormorant font-bold mt-4">{board.title}</h3>
               </div>
             ))}
           </div>
