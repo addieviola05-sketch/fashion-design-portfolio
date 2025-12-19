@@ -128,12 +128,23 @@ export default function Digital() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center bg-secondary/50 border-b border-border">
-        <div className="container text-center">
-          <h1 className="text-5xl md:text-6xl font-cormorant font-bold mb-4">
+      <section className="relative h-96 flex items-center justify-center border-b border-border overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(/images/digital-hero-bg.jpg)',
+          }}
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/40" />
+        
+        {/* Content */}
+        <div className="container text-center relative z-10">
+          <h1 className="text-5xl md:text-6xl font-cormorant font-bold mb-4 text-white">
             Digital Collections
           </h1>
-          <p className="text-lg text-foreground/70">
+          <p className="text-lg text-white/80">
             Fashion design collections created in Adobe Illustrator
           </p>
           <div className="w-12 h-1 bg-accent mx-auto mt-6" />
