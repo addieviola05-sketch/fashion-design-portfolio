@@ -426,8 +426,14 @@ export default function Sewing() {
       </section>
 
       {/* Craftsmanship Section */}
-      <section className="py-24 bg-secondary/30 border-t border-border">
-        <div className="container max-w-3xl">
+      <section className="relative py-24 bg-secondary/30 border-t border-border" style={{
+        backgroundImage: 'url(/images/backgrounds/craftsmanship-pattern.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}>
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="container max-w-3xl relative z-10">
           <h2 className="text-4xl font-cormorant font-bold mb-6 text-center">
             Craftsmanship & Construction
           </h2>
