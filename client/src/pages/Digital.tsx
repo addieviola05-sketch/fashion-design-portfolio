@@ -10,11 +10,11 @@ import CollectionCarousel from "@/components/CollectionCarousel";
 export default function Digital() {
   // Generate image paths for carousels
   const secretGardenImages = Array.from({ length: 20 }, (_, i) =>
-    `/collections/sg_page-${i}.png`
+    `/collections/sg_page-${String(i + 1).padStart(2, '0')}.png`
   );
 
   const dlyheImages = Array.from({ length: 24 }, (_, i) =>
-    `/collections/dlyh_page-${i}.png`
+    `/collections/dlyh_page-${String(i + 1).padStart(2, '0')}.png`
   );
 
   const collections = [
