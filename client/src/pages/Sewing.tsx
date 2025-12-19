@@ -116,6 +116,7 @@ export default function Sewing() {
         "Seam Finishing",
       ],
       images: [
+        "/images/sewing-projects/wedding-dress-main.jpg",
         "/images/sewing-projects/IMG_4531.jpeg",
         "/images/sewing-projects/IMG_4532.jpeg",
         "/images/sewing-projects/IMG_4533.jpeg",
