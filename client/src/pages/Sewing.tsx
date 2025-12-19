@@ -14,7 +14,7 @@ export default function Sewing() {
       id: 1,
       title: "Corsaire Dress",
       subtitle: "Vivienne Westwood Inspired | Edmund Dantes Quest for Revenge",
-      year: "2024",
+      year: "2025",
       description:
         "A modern reinterpretation of Vivienne Westwood's iconic 1981 Pirate Collection, inspired by Alexandre Dumas's The Count of Monte Cristo. This piece features bold architectural silhouettes with dramatic puffed sleeves and structured tailoring, referencing Westwood's rebellious aesthetic and the narrative of vengeance and transformation. The striped collar detail and precise button placement echo the punk-meets-haute-couture philosophy of the original collection.",
       materials: [
@@ -41,9 +41,9 @@ export default function Sewing() {
         "Vivienne Westwood's 1981 Pirate Collection & The Count of Monte Cristo narrative",
     },
     {
-      id: 2,
-      title: "Tartan Skirt with Cream Blouse",
-      year: "2024",
+      id: 7,
+      title: "Dandelion Brocade Dirndl Dress with Eyelet Blouse",
+      year: "2025",
       description:
         "A classically tailored ensemble combining a hand-constructed tartan skirt with structured pleating and a cream linen blouse. This piece demonstrates mastery of traditional tailoring techniques, including precise pattern matching on the tartan weave, professional hem finishing, and proper waistband construction. The combination showcases both technical precision and timeless design sensibility.",
       materials: [
@@ -69,9 +69,9 @@ export default function Sewing() {
       inspiration: "Classic tailoring with contemporary styling",
     },
     {
-      id: 3,
-      title: "Blue Evening Gown",
-      year: "2024",
+      id: 6,
+      title: "Bridgerton-Inspired Empire Waist Regency Gown",
+      year: "2025",
       description:
         "An elegant evening gown in rich sapphire blue with a gathered skirt and fitted bodice. This piece demonstrates mastery of draping and construction of flowing silhouettes. The gown features a scoop neckline, sleeveless design, and a full skirt with subtle beading details that catch the light. The construction shows precise waistband assembly and professional hem finishing for a polished, wearable garment.",
       materials: [
@@ -96,9 +96,9 @@ export default function Sewing() {
       inspiration: "Formal evening wear with elegant draping",
     },
     {
-      id: 4,
-      title: "Wedding Dress",
-      year: "2024",
+      id: 3,
+      title: "Blue Evening Gown",
+      year: "2025",
       description:
         "A stunning bridal gown featuring a fitted bodice with a gathered skirt and elegant train. This piece showcases advanced garment construction techniques including precise bodice fitting, professional seaming, and careful hem finishing. The dress features a scoop neckline and sleeveless design, with the focus on clean lines and impeccable tailoring. The construction demonstrates the technical skill required for formal bridal wear.",
       materials: [
@@ -127,7 +127,7 @@ export default function Sewing() {
     {
       id: 5,
       title: "Plaid Cape: 60's Oxford Inspired",
-      year: "2024",
+      year: "2025",
       description:
         "A sophisticated plaid cape crafted from wool twill, inspired by the classic 60's Oxford aesthetic. This piece demonstrates mastery of structured outerwear construction with impeccable drape and tailoring. The cape features a refined button closure system with precision placement, showcasing professional-level finishing work. The plaid pattern is carefully matched at seams, and the structured silhouette creates a timeless, preppy elegance reminiscent of vintage Oxford tailoring. The wool twill fabric provides both structure and movement, making this a versatile layering piece.",
       materials: ["Wool Twill", "Metal Buttons", "Interfacing", "Lining"],
@@ -148,8 +148,8 @@ export default function Sewing() {
       inspiration: "1960's Oxford aesthetic with vintage preppy tailoring",
     },
     {
-      id: 6,
-      title: "Bridgerton-Inspired Empire Waist Regency Gown",
+      id: 4,
+      title: "Wedding Dress",
       year: "2024",
       description:
         "A romantic Bridgerton-inspired empire waist regency gown crafted from luxurious silk satin with intricate beaded organza embellishments. This piece showcases mastery of delicate fabric handling and meticulous beadwork placement. The construction features a fitted empire waist, puffed short sleeves with beaded detailing, and a flowing skirt with scalloped lace hem. The scattered beaded flower motifs on the organza overlay create a whimsical, romantic aesthetic reminiscent of Regency-era ball gowns.",
@@ -180,8 +180,8 @@ export default function Sewing() {
       inspiration: "Bridgerton aesthetic with Regency-era ball gown elegance",
     },
     {
-      id: 7,
-      title: "Dandelion Brocade Dirndl Dress with Eyelet Blouse",
+      id: 2,
+      title: "Tartan Skirt with Cream Blouse",
       year: "2024",
       description:
         "A charming dirndl ensemble featuring a delicate dandelion brocade skirt paired with an elegant eyelet blouse. This piece showcases the ability to work with structured traditional silhouettes while incorporating refined details. The dirndl skirt features precise gathering and waistband construction, while the eyelet blouse demonstrates meticulous embroidery work and delicate fabric handling. The combination of the botanical brocade pattern with the intricate eyelet embroidery creates a romantic, whimsical aesthetic that blends traditional dirndl construction with contemporary design sensibilities. The careful color coordination between the soft blue tones of the brocade and the cream eyelet creates a harmonious, sophisticated look.",
