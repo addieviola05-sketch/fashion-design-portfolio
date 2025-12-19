@@ -112,6 +112,7 @@ export default function HandDrawn() {
       tagline: "Space Age Geometry & Calculated Revenge",
       description: "This collection merges Pierre Cardin's Space Age geometry and modular tailoring with fencing and militaristic references from Alexandre Dumas' 'The Count of Monte Cristo.' Using sharp, architectural silhouettes, segmented construction, circular cut-outs, and layered armor-like panels, each piece translates Edmond Dantès' calculated revenge into controlled, futuristic power dressing. Form becomes function; geometry becomes narrative.",
       inspiration: ["Pierre Cardin", "Space Age Design", "The Count of Monte Cristo", "Fencing", "Modular Tailoring", "Futurism"],
+      backgroundImage: "/images/opposite-designer-bg.jpg",
       carouselImages: [
         "/collections/opposite-designer/cardin-page-01.png",
         "/collections/opposite-designer/cardin-page-02.png",
