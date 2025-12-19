@@ -10,11 +10,11 @@ export default function Digital() {
   const collections = [
     {
       id: 1,
-      title: "Viola & Spindle",
-      subtitle: "Modern Fall Cozy Rainwear Collection",
+      title: "The Secret Garden",
+      subtitle: "Modern Fall Cozy Rainwear Collection by Viola & Spindle",
       year: "2026",
       season: "Fall 2026",
-      inspiration: "The Secret Garden",
+      inspiration: "The Secret Garden by Frances Hodgson Burnett",
       description:
         "A romantic and whimsical fall rainwear collection inspired by the lush botanical world of The Secret Garden. This collection features enchanting floral prints, structured plaids, and cozy silhouettes designed for modern comfort with a touch of literary magic. Each piece combines practical rainwear functionality with elevated design details, creating garments that celebrate nature's beauty while providing protection from the elements.",
       highlights: [
@@ -47,7 +47,7 @@ export default function Digital() {
     {
       id: 2,
       title: "Don't Lose Your Head",
-      subtitle: "Fall Tudor-Inspired Elevated Grunge Collection",
+      subtitle: "Fall Tudor-Inspired Elevated Grunge Collection by Viola & Spindle",
       year: "2025",
       season: "Fall 2025",
       inspiration: "Tudor History & Elevated Grunge Aesthetic",
