@@ -14,37 +14,37 @@ export default function Moodboards() {
     {
       id: 1,
       title: "Mood Board 1",
-      image: "/images/moodboards/Screenshot_2025-12-19_at_2.34.35 AM.png",
+      image: "/images/moodboards/moodboard_1.png",
     },
     {
       id: 2,
       title: "Mood Board 2",
-      image: "/images/moodboards/Screenshot_2025-12-19_at_2.34.50 AM.png",
+      image: "/images/moodboards/moodboard_2.png",
     },
     {
       id: 3,
       title: "Mood Board 3",
-      image: "/images/moodboards/Screenshot_2025-12-19_at_2.35.07 AM.png",
+      image: "/images/moodboards/moodboard_3.png",
     },
     {
       id: 4,
       title: "Mood Board 4",
-      image: "/images/moodboards/Screenshot_2025-12-19_at_2.35.28 AM.png",
+      image: "/images/moodboards/moodboard_4.png",
     },
     {
       id: 5,
       title: "Mood Board 5",
-      image: "/images/moodboards/Screenshot_2025-12-19_at_2.35.54 AM.png",
+      image: "/images/moodboards/moodboard_5.png",
     },
     {
       id: 6,
       title: "Mood Board 6",
-      image: "/images/moodboards/Screenshot_2025-12-19_at_2.36.32 AM.png",
+      image: "/images/moodboards/moodboard_6.png",
     },
     {
       id: 7,
       title: "Mood Board 7",
-      image: "/images/moodboards/Screenshot_2025-12-19_at_2.38.12 AM.png",
+      image: "/images/moodboards/moodboard_7.png",
     },
   ];
 
@@ -70,8 +70,10 @@ export default function Moodboards() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center bg-secondary/50 border-b border-border">
-        <div className="container text-center">
+      <section className="relative h-96 flex items-center justify-center bg-secondary/50 border-b border-border overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center opacity-40" style={{backgroundImage: 'url(/images/moodboards_hero.jpg)'}} />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="container text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-cormorant font-bold mb-4">Mood Boards</h1>
           <p className="text-lg text-accent font-semibold mb-2">Design Inspiration & Visual References</p>
           <p className="text-foreground/70">Exploring color palettes, textures, and conceptual themes</p>
