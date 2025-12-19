@@ -97,6 +97,7 @@ export default function HandDrawn() {
       tagline: "Edwardian Drapery & Historical Narrative",
       description: "A drapery-based collection inspired by Pittock Mansion's rich history, particularly the story of Georgiana Pittock. This collection reinterprets Edwardian fashion through a modern lens, honoring the elegance and complexity of early 20th-century silhouettes. Flowing fabrics, intricate pleating, and romantic draping create pieces that feel both historically grounded and contemporary.",
       inspiration: ["Pittock Mansion", "Georgiana Pittock", "Edwardian Fashion", "Historical Drapery", "Modern Interpretation"],
+      backgroundImage: "/images/beyond-pittock-bg.jpg",
       carouselImages: [
         "/collections/beyond-pittock/pittock-page-01.png",
         "/collections/beyond-pittock/pittock-page-02.png",
