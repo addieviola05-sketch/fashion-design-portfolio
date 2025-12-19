@@ -171,6 +171,7 @@ export default function Sewing() {
         "Delicate Fabric Handling",
       ],
       images: [
+        "/images/sewing-projects/bridgerton-dress-main.jpg",
         "/images/sewing-projects/IMG_4508.jpeg",
         "/images/sewing-projects/IMG_4515.jpeg",
         "/images/sewing-projects/IMG_4517.jpeg",
