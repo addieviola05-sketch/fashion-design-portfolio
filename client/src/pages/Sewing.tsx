@@ -31,8 +31,10 @@ export default function Sewing() {
         "Precise Seaming",
       ],
       images: [
-        "/images/sewing-projects/IMG_7246.jpeg",
-        "/images/sewing-projects/IMG_7295.jpeg",
+        "/images/sewing-projects/IMG_7336.jpeg",
+        "/images/sewing-projects/IMG_7335.jpeg",
+        "/images/sewing-projects/IMG_7334.jpeg",
+        "/images/sewing-projects/IMG_7333.jpeg",
       ],
       inspiration:
         "Vivienne Westwood's 1981 Pirate Collection & The Count of Monte Cristo narrative",
