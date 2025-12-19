@@ -136,7 +136,10 @@ export default function Sewing() {
         "Structured Drape",
         "Finishing Details",
       ],
-      images: ["/images/sewing-projects/IMG_4480.jpeg"],
+      images: [
+        "/images/sewing-projects/IMG_4480.jpeg",
+        "/images/sewing-projects/IMG_4481.jpeg",
+      ],
       inspiration: "Structured outerwear design",
     },
     {
