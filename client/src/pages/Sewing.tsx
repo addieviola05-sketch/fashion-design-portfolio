@@ -179,6 +179,38 @@ export default function Sewing() {
       ],
       inspiration: "Bridgerton aesthetic with Regency-era ball gown elegance",
     },
+    {
+      id: 7,
+      title: "Dandelion Brocade Dirndl Dress with Eyelet Blouse",
+      year: "2024",
+      description:
+        "A charming dirndl ensemble featuring a delicate dandelion brocade skirt paired with an elegant eyelet blouse. This piece showcases the ability to work with structured traditional silhouettes while incorporating refined details. The dirndl skirt features precise gathering and waistband construction, while the eyelet blouse demonstrates meticulous embroidery work and delicate fabric handling. The combination of the botanical brocade pattern with the intricate eyelet embroidery creates a romantic, whimsical aesthetic that blends traditional dirndl construction with contemporary design sensibilities. The careful color coordination between the soft blue tones of the brocade and the cream eyelet creates a harmonious, sophisticated look.",
+      materials: [
+        "Dandelion Brocade Fabric",
+        "Eyelet Cotton",
+        "Waistband Interfacing",
+        "Lining",
+        "Embroidery Details",
+      ],
+      techniques: [
+        "Dirndl Skirt Construction",
+        "Precise Gathering",
+        "Waistband Assembly",
+        "Eyelet Blouse Construction",
+        "Embroidery Work",
+        "Delicate Fabric Handling",
+        "Seam Finishing",
+      ],
+      images: [
+        "/images/sewing-projects/dandelion-dirndl-main.jpg",
+        "/images/sewing-projects/dandelion-dirndl-back.jpeg",
+        "/images/sewing-projects/dandelion-dirndl-back2.jpeg",
+        "/images/sewing-projects/dandelion-dirndl-eyelet.jpeg",
+        "/images/sewing-projects/dandelion-dirndl-brocade.jpeg",
+        "/images/sewing-projects/dandelion-dirndl-detail.jpeg",
+      ],
+      inspiration: "Traditional dirndl with botanical elegance and romantic eyelet details",
+    },
   ];
 
   return (
