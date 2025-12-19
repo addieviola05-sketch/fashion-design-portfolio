@@ -52,6 +52,7 @@ export default function HandDrawn() {
       tagline: "Solarpunk Architecture & Harmony",
       description: "A solarpunk-inspired collection that merges tailored silhouettes with fluid draping, knitwear, and technical construction. Drawing from architectural references like the Amazon Spheres, this collection explores the harmony between body, environment, and technology. Clean lines meet organic curves; structured tailoring flows into ethereal draping, creating a dialogue between human form and natural systems.",
       inspiration: ["Solarpunk", "Amazon Spheres", "Architectural Form", "Technical Knitwear", "Environmental Harmony"],
+      backgroundImage: "/images/solar-synthesis-bg.jpg",
       carouselImages: [
         "/collections/solar-synthesis/page-01.png",
         "/collections/solar-synthesis/page-02.png",
@@ -66,6 +67,7 @@ export default function HandDrawn() {
       tagline: "Deconstructed Androgynous Utilitarianism",
       description: "A female-leaning androgynous deconstructed utilitarianism collection informed by militarism, ritual, and psychological transformation. Drawing from historical Chinese dress, military uniforms, and the philosophical cost of divinity, this collection is inspired by R.F. Kuang's 'The Poppy War.' Sharp utility pockets, asymmetrical closures, and layered construction create a visual narrative of power, sacrifice, and transcendence through fashion.",
       inspiration: ["The Poppy War (Novel)", "Historical Chinese Dress", "Military Uniforms", "Psychological Transformation", "Ritualism"],
+      backgroundImage: "/images/poppy-war-bg.jpg",
       carouselImages: [
         "/collections/the-poppy-war/poppy-page-01.png",
         "/collections/the-poppy-war/poppy-page-02.png",
@@ -201,9 +203,7 @@ export default function HandDrawn() {
             {collections.map((collection, index) => (
               <div
                 key={collection.id}
-                className={`grid md:grid-cols-2 gap-12 items-center relative ${
-                  index % 2 === 1 ? "md:grid-flow-dense" : ""
-                }`}
+                className="grid md:grid-cols-2 gap-12 items-center relative"
                 style={collection.backgroundImage ? {
                   backgroundImage: `url(${collection.backgroundImage})`,
                   backgroundSize: "cover",
@@ -214,9 +214,8 @@ export default function HandDrawn() {
                 {collection.backgroundImage && (
                   <div className="absolute inset-0 bg-black/50 rounded-lg" />
                 )}
-                <div className="relative z-10">
                 {/* Content */}
-                <div className={index % 2 === 1 ? "md:col-start-2" : ""}>
+                <div className="relative z-10 md:col-start-1">
                   <div className="mb-6">
                     <h2 className="text-4xl font-cormorant font-bold mb-2">{collection.title}</h2>
                     <p className="text-lg text-accent font-semibold">{collection.tagline}</p>
@@ -281,7 +280,6 @@ export default function HandDrawn() {
                       </button>
                     </>
                   )}
-                </div>
                 </div>
 
                 {/* Divider */}
