@@ -278,6 +278,12 @@ export default function Sewing() {
               Digital
             </Link>
             <Link
+              href="/moodboards"
+              className="hover:text-accent transition-colors"
+            >
+              Moodboards
+            </Link>
+            <Link
               href="/artwork"
               className="hover:text-accent transition-colors"
             >

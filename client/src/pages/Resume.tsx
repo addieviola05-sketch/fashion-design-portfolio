@@ -30,6 +30,12 @@ export default function Resume() {
             <Link href="/digital">
               <div className="hover:text-accent transition-colors cursor-pointer">Digital</div>
             </Link>
+            <Link
+              href="/moodboards"
+              className="hover:text-accent transition-colors"
+            >
+              Moodboards
+            </Link>
             <Link href="/artwork">
               <div className="hover:text-accent transition-colors cursor-pointer">Artwork</div>
             </Link>

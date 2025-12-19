@@ -11,7 +11,7 @@ import { useState } from "react";
 export default function SorrowOfAngels() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const galleryItems = Array.from({ length: 18 }, (_, i) => ({
+  const galleryItems = Array.from({ length: 53 }, (_, i) => ({
     id: i + 1,
     title: `Slide ${i + 1}`,
     description: "The Sorrow of Angels Collection",

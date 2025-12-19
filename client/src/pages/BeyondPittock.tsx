@@ -65,7 +65,19 @@ export default function BeyondPittock() {
             <Link href="/hand-drawn" className="hover:text-accent transition-colors">Hand Drawn</Link>
             <Link href="/sewing" className="hover:text-accent transition-colors">Sewing</Link>
             <Link href="/digital" className="hover:text-accent transition-colors">Digital</Link>
+            <Link
+              href="/moodboards"
+              className="hover:text-accent transition-colors"
+            >
+              Moodboards
+            </Link>
             <Link href="/artwork" className="hover:text-accent transition-colors">Artwork</Link>
+            <Link
+              href="/moodboards"
+              className="hover:text-accent transition-colors"
+            >
+              Moodboards
+            </Link>
           </div>
         </nav>
       </header>
