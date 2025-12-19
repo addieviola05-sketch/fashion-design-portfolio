@@ -37,6 +37,7 @@ export default function HandDrawn() {
       tagline: "Mugler Inspired Day to Evening",
       description: "A day to evening collection inspired by Halley's Comet and recurrence theory. This collection explores the cyclical nature of celestial phenomena through structured silhouettes and intricate beading. Drawing from women's 90s power suiting, each piece channels architectural precision and otherworldly elegance, merging the sharp lines of Thierry Mugler with ethereal, beaded detailing that captures the luminescence of cosmic events.",
       inspiration: ["Halley's Comet", "Recurrence Theory", "Thierry Mugler", "90s Power Suiting", "Beadwork"],
+      backgroundImage: "/images/sorrow-bg.jpg",
       carouselImages: [
         "/images/sorrow-of-angels/001.webp",
         "/images/sorrow-of-angels/002.webp",
@@ -79,6 +80,7 @@ export default function HandDrawn() {
       tagline: "Lepidopteran Transformation & Vulnerability",
       description: "This collection interprets the stages of lepidopteran transformation through a chic, Stella McCartney–influenced lens. Pairing clean, elongated silhouettes and restrained tailoring with layered draping, pleating, and distressed textures, each piece evokes the shedding of skin, the fragility of insect wings, and the containment of growth. The collection explores themes of vulnerability, transformation, and the beauty found in decay.",
       inspiration: ["Lepidopteran Metamorphosis", "Stella McCartney", "Distressed Textiles", "Layered Draping", "Growth & Decay"],
+      backgroundImage: "/images/metamorphosis-bg.jpg",
       carouselImages: [
         "/images/metamorphosis/metamorphosis-page-01.png",
         "/images/metamorphosis/metamorphosis-page-02.png",
@@ -199,10 +201,20 @@ export default function HandDrawn() {
             {collections.map((collection, index) => (
               <div
                 key={collection.id}
-                className={`grid md:grid-cols-2 gap-12 items-center ${
+                className={`grid md:grid-cols-2 gap-12 items-center relative ${
                   index % 2 === 1 ? "md:grid-flow-dense" : ""
                 }`}
+                style={collection.backgroundImage ? {
+                  backgroundImage: `url(${collection.backgroundImage})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundAttachment: "fixed",
+                } : {}}
               >
+                {collection.backgroundImage && (
+                  <div className="absolute inset-0 bg-black/50 rounded-lg" />
+                )}
+                <div className="relative z-10">
                 {/* Content */}
                 <div className={index % 2 === 1 ? "md:col-start-2" : ""}>
                   <div className="mb-6">
@@ -229,7 +241,7 @@ export default function HandDrawn() {
                 </div>
 
                 {/* Carousel Preview */}
-                <div className={`relative bg-secondary/30 rounded-lg border border-border overflow-hidden group cursor-pointer ${index % 2 === 1 ? "md:col-start-1 md:row-start-1" : ""}`} style={{aspectRatio: '16 / 9'}}>
+                <div className="relative bg-secondary/30 rounded-lg border border-border overflow-hidden group cursor-pointer md:col-start-2" style={{aspectRatio: '16 / 9'}}>
                   <Link href={`/${collection.id}`} className="absolute inset-0 z-0">
                     {collection.carouselImages && collection.carouselImages.length > 0 ? (
                       <>
@@ -269,6 +281,7 @@ export default function HandDrawn() {
                       </button>
                     </>
                   )}
+                </div>
                 </div>
 
                 {/* Divider */}
