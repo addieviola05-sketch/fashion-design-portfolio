@@ -11,38 +11,12 @@ import { useState } from "react";
 export default function SorrowOfAngels() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const galleryItems = [
-    {
-      id: 1,
-      title: "Title Slide",
-      description: "Collection introduction with cosmic inspiration",
-      image: "/images/sorrow-of-angels/001.webp",
-    },
-    {
-      id: 2,
-      title: "Recurrence Theory",
-      description: "Conceptual foundation rooted in Poincaré's theorem and celestial cycles",
-      image: "/images/sorrow-of-angels/002.webp",
-    },
-    {
-      id: 3,
-      title: "Halley's Comet",
-      description: "Historical and astronomical context for the collection",
-      image: "/images/sorrow-of-angels/003.webp",
-    },
-    {
-      id: 4,
-      title: "Mood & Texture Studies",
-      description: "Visual inspiration palette exploring beading, luminescence, and cosmic elements",
-      image: "/images/sorrow-of-angels/004.webp",
-    },
-    {
-      id: 5,
-      title: "Constructed Garments",
-      description: "Day-to-evening pieces featuring structured silhouettes and intricate beadwork",
-      image: "/images/sorrow-of-angels/005.webp",
-    },
-  ];
+  const galleryItems = Array.from({ length: 18 }, (_, i) => ({
+    id: i + 1,
+    title: `Slide ${i + 1}`,
+    description: "The Sorrow of Angels Collection",
+    image: `/images/sorrow-of-angels/soa_page-${String(i + 1).padStart(2, '0')}.png`,
+  }));
 
   const carouselImages = galleryItems.map((item) => item.image);
 
