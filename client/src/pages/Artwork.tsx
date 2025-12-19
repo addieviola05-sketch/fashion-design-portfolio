@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "wouter";
 
 /**
@@ -7,34 +8,30 @@ import { Link } from "wouter";
  */
 
 export default function Artwork() {
-  const artworks = [
-    {
-      id: 1,
-      title: "Fabric Studies Series",
-      year: "2024",
-      description:
-        "A collection of artistic explorations of fabric, texture, and color. These pieces investigate the visual and tactile qualities of different materials through painting, collage, and mixed media.",
-      medium: ["Watercolor", "Collage", "Mixed Media"],
-      imageUrl: "/images/hero-fashion.jpg",
-    },
-    {
-      id: 2,
-      title: "Character Portraits",
-      year: "2024",
-      description:
-        "Artistic portraits exploring character development and identity through costume and adornment. These pieces blend portraiture with fashion illustration.",
-      medium: ["Acrylic", "Ink", "Digital Painting"],
-      imageUrl: "/images/design-process.jpg",
-    },
-    {
-      id: 3,
-      title: "Textile Art Installation",
-      year: "2023",
-      description:
-        "A large-scale textile art installation combining fabric, thread, and found objects. This immersive piece explores themes of identity, memory, and transformation.",
-      medium: ["Textile", "Installation", "Found Objects"],
-      imageUrl: "/images/costume-design.jpg",
-    },
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const artworkImages = [
+    { id: 1, src: "/artwork/60798937631__0B63A59E-56ED-4479-A10D-62313C1751F5.JPG" },
+    { id: 2, src: "/artwork/IMG_3310.JPG" },
+    { id: 3, src: "/artwork/IMG_3312.JPG" },
+    { id: 4, src: "/artwork/IMG_3316.PNG" },
+    { id: 5, src: "/artwork/IMG_3320.JPG" },
+    { id: 6, src: "/artwork/IMG_3318.JPG" },
+    { id: 7, src: "/artwork/785099955.531993.jpg" },
+    { id: 8, src: "/artwork/785100093.605048.jpg" },
+    { id: 9, src: "/artwork/785100131.715581.jpg" },
+    { id: 10, src: "/artwork/785100157.760107.jpg" },
+    { id: 11, src: "/artwork/IMG_7325.JPG" },
+    { id: 12, src: "/artwork/782074544.504703.jpg" },
+    { id: 13, src: "/artwork/783284835.816922.jpg" },
+    { id: 14, src: "/artwork/IMG_7326.JPG" },
+    { id: 15, src: "/artwork/IMG_7324.JPG" },
+    { id: 16, src: "/artwork/IMG_7319.JPG" },
+    { id: 17, src: "/artwork/IMG_7321.JPG" },
+    { id: 18, src: "/artwork/IMG_7323.JPG" },
+    { id: 19, src: "/artwork/IMG_7322.JPG" },
+    { id: 20, src: "/artwork/IMG_0423.jpg" },
+    { id: 21, src: "/artwork/IMG_0424.jpg" },
   ];
 
   return (
@@ -71,79 +68,52 @@ export default function Artwork() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center bg-secondary/50 border-b border-border">
-        <div className="container text-center">
-          <h1 className="text-5xl md:text-6xl font-cormorant font-bold mb-4">
+      <section className="relative h-96 flex items-center justify-center border-b border-border overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${artworkImages[0]?.src})`,
+          }}
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+        
+        {/* Content */}
+        <div className="container text-center relative z-10">
+          <h1 className="text-5xl md:text-6xl font-cormorant font-bold mb-4 text-white">
             Artwork
           </h1>
-          <p className="text-lg text-foreground/70">
+          <p className="text-lg text-white/80">
             Artistic explorations and creative expressions
           </p>
           <div className="w-12 h-1 bg-accent mx-auto mt-6" />
         </div>
       </section>
 
-      {/* Artworks Grid */}
+      {/* Artwork Gallery Grid */}
       <section className="py-24">
         <div className="container">
-          <div className="space-y-20">
-            {artworks.map((artwork, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {artworkImages.map((artwork, index) => (
               <div
                 key={artwork.id}
-                className="grid md:grid-cols-2 gap-12 items-center"
+                className="group relative overflow-hidden rounded-lg aspect-square cursor-pointer"
+                onClick={() => setSelectedImage(artwork.src)}
                 style={{
-                  animation: `fadeInUp 0.6s ease-out ${index * 0.2}s both`,
+                  animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`,
                 }}
               >
-                {/* Image */}
-                <div
-                  className={`relative overflow-hidden rounded-lg h-96 ${
-                    index % 2 === 1 ? "md:order-2" : ""
-                  }`}
-                >
-                  <img
-                    src={artwork.imageUrl}
-                    alt={artwork.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className={index % 2 === 1 ? "md:order-1" : ""}>
-                  <div className="mb-4">
-                    <span className="text-accent font-raleway text-sm font-semibold">
-                      {artwork.year}
-                    </span>
-                  </div>
-
-                  <h2 className="text-4xl font-cormorant font-bold mb-4">{artwork.title}</h2>
-                  <div className="w-12 h-1 bg-accent mb-6" />
-
-                  <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
-                    {artwork.description}
-                  </p>
-
-                  {/* Medium */}
-                  <div className="mb-8">
-                    <h3 className="text-sm font-raleway font-semibold text-accent mb-3 uppercase tracking-wide">
-                      Medium
-                    </h3>
-                    <div className="flex flex-wrap gap-2">
-                      {artwork.medium.map((med) => (
-                        <span
-                          key={med}
-                          className="px-3 py-1 bg-secondary/50 border border-border rounded-full text-sm text-foreground/70"
-                        >
-                          {med}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* View Details Button */}
-                  <button className="inline-flex items-center gap-2 px-6 py-2 border border-accent text-accent rounded-lg font-raleway font-semibold hover:bg-accent/10 transition-colors">
-                    View Details <span>→</span>
-                  </button>
+                <img
+                  src={artwork.src}
+                  alt={`Artwork ${artwork.id}`}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                {/* Overlay on Hover */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
+                  <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-raleway font-semibold">
+                    View
+                  </span>
                 </div>
               </div>
             ))}
@@ -244,6 +214,28 @@ export default function Artwork() {
       <footer className="py-8 bg-secondary/50 border-t border-border text-center text-foreground/60 text-sm">
         <p>© 2025 Addison Moore. All rights reserved.</p>
       </footer>
+
+      {/* Lightbox Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 cursor-pointer"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-4xl w-full h-auto max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
+            <img
+              src={selectedImage}
+              alt="Artwork"
+              className="w-full h-full object-contain"
+            />
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 text-white bg-black/50 hover:bg-black/70 rounded-full w-10 h-10 flex items-center justify-center transition-colors"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Animations */}
       <style>{`
