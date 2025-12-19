@@ -73,7 +73,7 @@ export default function Artwork() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(${artworkImages[0]?.src})`,
+            backgroundImage: 'url(/artwork/IMG_0423.jpg)',
           }}
         />
         {/* Dark Overlay */}
