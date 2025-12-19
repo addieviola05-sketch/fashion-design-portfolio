@@ -12,8 +12,8 @@ export default function Sewing() {
   const projects = [
     {
       id: 1,
-      title: "Vivienne Westwood Inspired Dress",
-      subtitle: "Edmund Dantes Quest for Revenge",
+      title: "Corsaire Dress",
+      subtitle: "Vivienne Westwood Inspired | Edmund Dantes Quest for Revenge",
       year: "2024",
       description:
         "A modern reinterpretation of Vivienne Westwood's iconic 1981 Pirate Collection, inspired by Alexandre Dumas's The Count of Monte Cristo. This piece features bold architectural silhouettes with dramatic puffed sleeves and structured tailoring, referencing Westwood's rebellious aesthetic and the narrative of vengeance and transformation. The striped collar detail and precise button placement echo the punk-meets-haute-couture philosophy of the original collection.",
@@ -33,8 +33,9 @@ export default function Sewing() {
       images: [
         "/images/sewing-projects/IMG_7331.jpeg",
         "/images/sewing-projects/IMG_7332.jpeg",
-        "/images/sewing-projects/IMG_7330.jpeg",
-        "/images/sewing-projects/IMG_7333.jpeg",
+        "/images/sewing-projects/IMG_7334.jpeg",
+        "/images/sewing-projects/IMG_7335.jpeg",
+        "/images/sewing-projects/IMG_7336.jpeg",
       ],
       inspiration:
         "Vivienne Westwood's 1981 Pirate Collection & The Count of Monte Cristo narrative",
