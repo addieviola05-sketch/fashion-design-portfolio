@@ -39,11 +39,11 @@ export default function HandDrawn() {
       inspiration: ["Halley's Comet", "Recurrence Theory", "Thierry Mugler", "90s Power Suiting", "Beadwork"],
       backgroundImage: "/images/sorrow-bg.jpg",
       carouselImages: [
-        "/images/sorrow-of-angels/001.webp",
-        "/images/sorrow-of-angels/002.webp",
-        "/images/sorrow-of-angels/003.webp",
-        "/images/sorrow-of-angels/004.webp",
-        "/images/sorrow-of-angels/005.webp",
+        "/images/hand-drawn-hero.jpg",
+        "/images/hand-drawn-hero.jpg",
+        "/images/hand-drawn-hero.jpg",
+        "/images/hand-drawn-hero.jpg",
+        "/images/hand-drawn-hero.jpg",
       ],
     },
     {
