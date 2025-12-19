@@ -34,7 +34,6 @@ export default function Resume() {
               <div className="hover:text-accent transition-colors cursor-pointer">Artwork</div>
             </Link>
             <Link href="/contact">
-              <div className="hover:text-accent transition-colors cursor-pointer">Contact</div>
             </Link>
           </div>
         </nav>

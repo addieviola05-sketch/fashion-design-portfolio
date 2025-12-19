@@ -47,3 +47,6 @@
 ## Deployment
 - [ ] Save checkpoint with all collection pages and design updates
 - [ ] Final review before publication
+
+## Navigation Updates
+- [x] Remove "Contact" link from top navigation menu across all pages

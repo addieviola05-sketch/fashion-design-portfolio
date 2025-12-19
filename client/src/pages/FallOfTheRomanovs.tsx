@@ -56,7 +56,6 @@ export default function FallOfTheRomanovs() {
             <Link href="/sewing" className="hover:text-accent transition-colors">Sewing</Link>
             <Link href="/digital" className="hover:text-accent transition-colors">Digital</Link>
             <Link href="/artwork" className="hover:text-accent transition-colors">Artwork</Link>
-            <Link href="/contact" className="hover:text-accent transition-colors">Contact</Link>
           </div>
         </nav>
       </header>

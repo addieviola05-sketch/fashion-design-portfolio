@@ -64,7 +64,6 @@ export default function Moodboards() {
             <a href="/digital" className="hover:text-accent transition-colors">Digital</a>
             <a href="/moodboards" className="hover:text-accent transition-colors">Moodboards</a>
             <a href="/artwork" className="hover:text-accent transition-colors">Artwork</a>
-            <a href="#contact" className="hover:text-accent transition-colors">Contact</a>
           </div>
         </nav>
       </header>
