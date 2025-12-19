@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import SlideLightbox from "./SlideLightbox";
 
 interface CollectionCarouselProps {
   images: string[];
@@ -8,6 +9,7 @@ interface CollectionCarouselProps {
 
 export default function CollectionCarousel({ images, title }: CollectionCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
 
   const goToPrevious = () => {
     setCurrentIndex((prevIndex) =>
@@ -25,17 +27,38 @@ export default function CollectionCarousel({ images, title }: CollectionCarousel
     setCurrentIndex(index);
   };
 
+  const openLightbox = () => {
+    setLightboxOpen(true);
+  };
+
   return (
     <div className="w-full">
+      {/* Lightbox */}
+      <SlideLightbox
+        images={images}
+        initialIndex={currentIndex}
+        title={title}
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+      />
+
       {/* Main Carousel */}
       <div className="relative bg-secondary/50 rounded-lg overflow-hidden">
         {/* Image Container */}
-        <div className="relative w-full aspect-video bg-background flex items-center justify-center">
+        <div
+          className="relative w-full aspect-video bg-background flex items-center justify-center cursor-pointer hover:bg-secondary/70 transition-colors"
+          onClick={openLightbox}
+        >
           <img
             src={images[currentIndex]}
             alt={`${title} slide ${currentIndex + 1}`}
             className="w-full h-full object-contain"
           />
+          <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity bg-black/20">
+            <div className="text-white text-center">
+              <p className="text-lg font-semibold">Click to expand</p>
+            </div>
+          </div>
         </div>
 
         {/* Navigation Buttons */}
@@ -67,7 +90,7 @@ export default function CollectionCarousel({ images, title }: CollectionCarousel
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all ${
+            className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all cursor-pointer hover:shadow-lg ${
               index === currentIndex
                 ? "border-accent"
                 : "border-border hover:border-accent/50"
@@ -77,7 +100,7 @@ export default function CollectionCarousel({ images, title }: CollectionCarousel
             <img
               src={image}
               alt={`Thumbnail ${index + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-110 transition-transform"
             />
           </button>
         ))}
