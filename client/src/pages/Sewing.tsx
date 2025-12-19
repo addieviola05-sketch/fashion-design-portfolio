@@ -288,8 +288,14 @@ export default function Sewing() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center bg-secondary/50 border-b border-border">
-        <div className="container text-center">
+      <section className="relative h-96 flex items-center justify-center bg-secondary/50 border-b border-border" style={{
+        backgroundImage: 'url(/images/backgrounds/sewing-header-threads.jpeg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}>
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="container text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-cormorant font-bold mb-4">
             Sewing Projects
           </h1>
