@@ -109,8 +109,14 @@ export default function Home() {
       </section>
 
       {/* Portfolio Sections Preview */}
-      <section id="collections" className="py-24 bg-background">
-        <div className="container">
+      <section id="collections" className="py-24 bg-background relative" style={{
+        backgroundImage: 'url(/images/my-work-bg.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}>
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="container relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-cormorant font-bold mb-4">
               My Work
@@ -174,8 +180,14 @@ export default function Home() {
       </section>
 
       {/* About Preview Section */}
-      <section id="about" className="py-24 bg-secondary/30">
-        <div className="container">
+      <section id="about" className="py-24 bg-secondary/30 relative" style={{
+        backgroundImage: 'url(/images/about-me-bg.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}>
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="container relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Image */}
             <div className="relative overflow-hidden rounded-lg h-96 md:h-full min-h-96">
