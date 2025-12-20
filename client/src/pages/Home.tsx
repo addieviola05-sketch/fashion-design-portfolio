@@ -1,7 +1,6 @@
 import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import { useEffect, useState } from "react";
-import { useAuth } from "@/_core/hooks/useAuth";
 
 /**
  * Home Page - Fashion & Costume Designer Portfolio
@@ -11,9 +10,7 @@ import { useAuth } from "@/_core/hooks/useAuth";
  */
 
 export default function Home() {
-  // The userAuth hooks provides authentication state
-  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
-  let { user, loading, error, isAuthenticated, logout } = useAuth();
+
 
   const [scrollY, setScrollY] = useState(0);
 
