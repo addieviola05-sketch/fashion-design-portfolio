@@ -33,18 +33,12 @@ export default function SorrowOfAngels() {
       {/* Navigation */}
       <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <nav className="container py-4 flex justify-between items-center">
-          <Link href="/hand-drawn">
-            <a className="hover:opacity-80 transition-opacity">
-              <img src="/images/logo-monogram.png" alt="Addison Moore" className="h-12 w-auto" />
-            </a>
+          <Link href="/hand-drawn" className="hover:opacity-80 transition-opacity">
+            <img src="/images/logo-monogram.png" alt="Addison Moore" className="h-12 w-auto" />
           </Link>
           <div className="flex gap-6 text-sm">
-            <Link href="/">
-              <a className="hover:text-accent transition-colors">Home</a>
-            </Link>
-            <Link href="/hand-drawn">
-              <a className="hover:text-accent transition-colors">Back to Collections</a>
-            </Link>
+            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
+            <Link href="/hand-drawn" className="hover:text-accent transition-colors">Back to Collections</Link>
           </div>
         </nav>
       </header>
