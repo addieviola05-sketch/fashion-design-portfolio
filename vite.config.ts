@@ -3,14 +3,27 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import fs from "node:fs";
 import path from "path";
-import { defineConfig } from "vite";
+import { defineConfig, Plugin } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
-
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
+// Plugin to copy _redirects file to dist root for Netlify SPA routing
+const copyRedirectsPlugin: Plugin = {
+  name: 'copy-redirects',
+  generateBundle( ) {
+    const redirectsPath = path.resolve(import.meta.dirname, 'client', 'public', '_redirects');
+    if (fs.existsSync(redirectsPath)) {
+      const content = fs.readFileSync(redirectsPath, 'utf-8');
+      this.emitFile({
+        type: 'asset',
+        fileName: '_redirects',
+        source: content,
+      });
+    }
+  },
+};
 
 export default defineConfig({
-  plugins,
+  plugins: [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), copyRedirectsPlugin],
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
@@ -22,7 +35,7 @@ export default defineConfig({
   root: path.resolve(import.meta.dirname, "client"),
   publicDir: path.resolve(import.meta.dirname, "client", "public"),
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
   },
   server: {
