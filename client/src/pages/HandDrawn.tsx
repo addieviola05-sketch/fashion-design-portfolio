@@ -177,12 +177,6 @@ export default function HandDrawn() {
               Moodboards
             </Link>
             <Link href="/artwork" className="hover:text-accent transition-colors">Artwork</Link>
-            <Link
-              href="/moodboards"
-              className="hover:text-accent transition-colors"
-            >
-              Moodboards
-            </Link>
           </div>
         </nav>
       </header>
