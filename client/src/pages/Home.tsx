@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import { useEffect, useState } from "react";
-import { useAuth } from "@/_core/hooks/useAuth";
+// Authentication not needed for portfolio
 
 /**
  * Home Page - Fashion & Costume Designer Portfolio
@@ -11,9 +11,7 @@ import { useAuth } from "@/_core/hooks/useAuth";
  */
 
 export default function Home() {
-  // The userAuth hooks provides authentication state
-  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
-  let { user, loading, error, isAuthenticated, logout } = useAuth();
+  // Authentication not needed for portfolio
 
   const [scrollY, setScrollY] = useState(0);
 
