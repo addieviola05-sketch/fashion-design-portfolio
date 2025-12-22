@@ -340,6 +340,10 @@ export default function Sewing() {
                       src={project.images[0]}
                       alt={project.title}
                       className="w-full h-full object-cover"
+                      style={{
+                        transform: [1, 3, 2].includes(project.id) ? 'rotate(90deg)' : 'none',
+                        transformOrigin: 'center'
+                      }}
                     />
                   </div>
                   {project.images.length > 1 && (
@@ -353,6 +357,10 @@ export default function Sewing() {
                             src={img}
                             alt={`${project.title} detail ${idx + 1}`}
                             className="w-full h-full object-cover"
+                            style={{
+                              transform: [1, 3, 2, 6].includes(project.id) ? 'rotate(90deg)' : project.id === 4 ? 'rotate(90deg)' : 'none',
+                              transformOrigin: 'center'
+                            }}
                           />
                         </div>
                       ))}
