@@ -11,11 +11,11 @@ import { useState } from "react";
 export default function SorrowOfAngels() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const galleryItems = Array.from({ length: 15 }, (_, i) => ({
+  const galleryItems = Array.from({ length: 32 }, (_, i) => ({
     id: i + 1,
     title: `Slide ${i + 1}`,
     description: "The Sorrow of Angels Collection",
-    image: `/images/sorrow-of-angels/soa_page-${String(i + 1).padStart(2, '0')}.png`,
+    image: `/images/sorrow-of-angels/page-${i + 1}.png`,
   }));
 
   const carouselImages = galleryItems.map((item) => item.image);
