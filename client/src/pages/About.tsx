@@ -124,7 +124,7 @@ export default function About() {
               </p>
 
               <p className="text-base text-accent font-semibold mt-8 pt-6 border-t border-border">
-                ✦ (541) 280-9231 | ✦ addison.ogcoaicloud.com
+                ✦ (541) 280-9231 | ✦ Addison.agco@icloud.com
               </p>
             </div>
           </div>
@@ -228,7 +228,7 @@ export default function About() {
               Let's discuss your next project or creative vision.
             </p>
             <a
-              href="mailto:addison.ogcoaicloud.com"
+              href="mailto:Addison.agco@icloud.com"
               className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-accent-foreground rounded-lg font-raleway font-semibold hover:opacity-90 transition-opacity"
             >
               Get in Touch

@@ -219,7 +219,7 @@ export default function Metamorphosis() {
             Explore the six stages of transformation and discuss custom collaborations inspired by metamorphosis.
           </p>
           <a
-            href="mailto:addison.ogcoaicloud.com"
+            href="mailto:Addison.agco@icloud.com"
             className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity"
           >
             Get in Touch

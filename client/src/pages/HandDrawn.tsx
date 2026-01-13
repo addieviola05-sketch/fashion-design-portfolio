@@ -308,7 +308,7 @@ export default function HandDrawn() {
             Each collection represents a unique conceptual journey. I'm open to discussing custom design work, consultations, and collaborative projects.
           </p>
           <a
-            href="mailto:addison.ogcoaicloud.com"
+            href="mailto:Addison.agco@icloud.com"
             className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity"
           >
             Get in Touch

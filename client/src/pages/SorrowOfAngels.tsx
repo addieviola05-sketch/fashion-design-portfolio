@@ -168,7 +168,7 @@ export default function SorrowOfAngels() {
             Learn more about the conceptual process, construction details, or discuss custom collaborations.
           </p>
           <a
-            href="mailto:addison.ogcoaicloud.com"
+            href="mailto:Addison.agco@icloud.com"
             className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity"
           >
             Get in Touch
